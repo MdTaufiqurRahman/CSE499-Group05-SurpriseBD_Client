@@ -1,49 +1,74 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Gift from '../Gift/Gift';
 
 
 const Home = () => {
-    const style = {
-        display: 'flex',
-        margin: '40px',
-        justifyContent: 'space-between'
-    }
-    const rooms = [
+
+    const gifts = [
         {
-            title: 'Premium Gift Items',
+            title: 'Customized Mug',
             description: 'Standard Single Rooms are designed in open -concept living area and have many facilities.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/offers/offer-images/burj-al-arab-presidential-suite-living-room-4-hero.jpg',
-            bed: 1,
-            capacity: 1,
-            bedType: 'Single',
+            imgUrl: 'https://sblelo.com/wp-content/uploads/2020/07/birthday-2.jpg',
+            capacity: 12,
+            giftType: 'Single',
             price: 119
         },
         {
-            title: 'Couple Power Room',
+            title: 'Customized Pen Holder',
             description: 'Superior Double Rooms are perfectly equipped for traveling couples or friends.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/offers/offer-images/burj-al-arab-royal-suite-staircase-5-hero.jpg',
-            bed: 1,
+            imgUrl: 'https://media.istockphoto.com/photos/pen-holder-with-colored-pens-and-pencils-picture-id682866236?k=6&m=682866236&s=612x612&w=0&h=e648ilRx8yumUxoljnfBzb0GYQJZhlnsC5nl6NJR-8g=',
             capacity: 2,
-            bedType: 'Double',
+            giftType: 'Double',
             price: 149
+        },
+        {
+            title: 'Customized clock',
+            description: ' Have lots of in-room facilities and are designed in open-concept living area.',
+            imgUrl: 'https://3.imimg.com/data3/TM/GB/MY-6145877/designer-wall-clock-500x500.jpg',
+            capacity: 4,
+            giftType: 'Family',
+            price: 199
         },
         {
             title: 'Family Capacity Room',
             description: ' Have lots of in-room facilities and are designed in open-concept living area.',
             imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
-            bed: 2,
             capacity: 4,
-            bedType: 'Family',
+            giftType: 'Family',
+            price: 199
+        },
+        {
+            title: 'Family Capacity Room',
+            description: ' Have lots of in-room facilities and are designed in open-concept living area.',
+            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
+            capacity: 4,
+            giftType: 'Family',
+            price: 199
+        },
+        {
+            title: 'Family Capacity Room',
+            description: ' Have lots of in-room facilities and are designed in open-concept living area.',
+            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
+            capacity: 4,
+            giftType: 'Family',
             price: 199
         }
+
     ]
     return (
-        <div style={style}>
-            <h2>This is home</h2>
+        <Container>
+        <div className="row" style={{
+                 textAlign: 'center',
+                 marginTop:'40px',
+                 rowGap:'40px',
+                 columnGap:'82px',
+            }} >
             {
-                rooms.map(room => <Gift key={room.bedType} room={room}></Gift>)
+                gifts.map(gift => <Gift key={gift.giftType} gift={gift}></Gift>)
             }
         </div>
+        </Container>
     );
 };
 
