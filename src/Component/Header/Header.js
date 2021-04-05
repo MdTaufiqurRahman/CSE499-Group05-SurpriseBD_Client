@@ -1,4 +1,3 @@
-import {Navbar, Nav} from "react-bootstrap";
 import React from "react";
 import { Link } from 'react-router-dom';
 import header from '../../images/header.png';
@@ -19,7 +18,7 @@ const Header = () => {
                 <Link to="/login">About Us</Link>
             </li>
             <li>
-                <Link className="btn-book" to="/book">Gift Item</Link>
+                <Link className="btn-book" to="/gift">Gift Item</Link>
             </li>
         </ul>
     </nav>

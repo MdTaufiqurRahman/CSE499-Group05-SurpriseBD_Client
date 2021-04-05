@@ -31,25 +31,25 @@ const Home = () => {
             price: 199
         },
         {
-            title: 'Family Capacity Room',
+            title: 'Hand Bag',
             description: ' Have lots of in-room facilities and are designed in open-concept living area.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
+            imgUrl: 'https://sc02.alicdn.com/kf/UTB8GgihtdoSdeJk43Ow761a4XXat/727013055/UTB8GgihtdoSdeJk43Ow761a4XXat.png_.webp',
             capacity: 4,
             giftType: 'Family',
             price: 199
         },
         {
-            title: 'Family Capacity Room',
+            title: 'Cake',
             description: ' Have lots of in-room facilities and are designed in open-concept living area.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
+            imgUrl: 'https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg',
             capacity: 4,
             giftType: 'Family',
             price: 199
         },
         {
-            title: 'Family Capacity Room',
+            title: 'Camera',
             description: ' Have lots of in-room facilities and are designed in open-concept living area.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidential-suite-guest-bedroom_6-4_landscape/burj-al-arab-presidential-suite-guest-bedroom_16-9_landscape.jpg?w=2080',
+            imgUrl: 'https://asset.fujifilm.com/www/ca/files/styles/600x400/public/2020-03/155b4fec94ce7a8bd31b7c265efcb936/thumb_instaxcameras_13.jpg?itok=pd5NDx_c',
             capacity: 4,
             giftType: 'Family',
             price: 199
@@ -61,6 +61,8 @@ const Home = () => {
         <div className="row" style={{
                  textAlign: 'center',
                  marginTop:'40px',
+                 marginBottom:'40px',
+                 marginLeft:'40px',
                  rowGap:'40px',
                  columnGap:'82px',
             }} >
