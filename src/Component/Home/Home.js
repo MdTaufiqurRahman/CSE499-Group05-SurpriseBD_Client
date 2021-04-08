@@ -41,7 +41,7 @@ const Home = () => {
         {
             title: 'Cake',
             description: ' Have lots of in-room facilities and are designed in open-concept living area.',
-            imgUrl: 'https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg',
+            imgUrl: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/202685_0-803-5447-5447.jpg',
             capacity: 4,
             giftType: 'Family',
             price: 199
