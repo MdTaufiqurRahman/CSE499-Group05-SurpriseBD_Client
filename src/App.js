@@ -8,6 +8,7 @@ import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
 import Footer from './Component/Footer/Footer';
+import Contact from './Component/Contact/Contact';
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/contact">
+          <Contact></Contact>
         </Route>
         <Route exact path="/">
           <Home />

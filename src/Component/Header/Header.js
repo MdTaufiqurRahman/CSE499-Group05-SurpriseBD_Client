@@ -20,10 +20,13 @@ const Header = () => {
             <li>
                 <Link className="btn-book" to="/gift">Gift Item</Link>
             </li>
+            <li>
+                <Link to="/contact">Contact Us</Link>
+            </li>
         </ul>
     </nav>
-      <div className="title-container">
-          <h1>SURPRISE BD</h1>
+      <div className="title-container" style={{ marginTop:'120px'}}>
+          <h1 style={{fontSize:'70px'}}>SURPRISE BD</h1>
           <h2>SPREAD A LITTLE HAPPINESS</h2>
       </div>
 </div>
