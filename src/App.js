@@ -9,10 +9,18 @@ import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
 import Footer from './Component/Footer/Footer';
 import Contact from './Component/Contact/Contact';
+import { createContext, useState } from 'react';
+import AboutUs from './Component/AboutUs/AboutUs';
 
+export const UserContext = createContext();
 
 function App() {
+   const [loggedIn, setLoggedIn] = useState({});
+   const [name, setName]=useState("user")
+
+
   return (
+    <UserContext.Provider value={[loggedIn, setLoggedIn, name, setName]}>
     <Router>
       <Header></Header>
       <Switch>
@@ -21,6 +29,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/about">
+          <AboutUs></AboutUs>
         </Route>
         <Route path="/contact">
           <Contact></Contact>
@@ -31,6 +42,7 @@ function App() {
       </Switch>
       <Footer></Footer>
     </Router>
+    </UserContext.Provider>
   );
 }
 
