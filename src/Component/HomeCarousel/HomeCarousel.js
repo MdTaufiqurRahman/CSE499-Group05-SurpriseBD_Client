@@ -10,7 +10,7 @@ const HomeCarousel = () => {
     <div className="container mt-3" style={{display:'center',
     marginLeft: "auto",
     marginRight: "auto",
-    width: "55%"}}>
+    width: "62%"}}>
 
       <Carousel>
         <Carousel.Item>
