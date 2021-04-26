@@ -27,7 +27,7 @@ const Footer = () => {
         <footer style={{backgroundColor:'#20232a'}} className="footer-area">
         <div className="container">
             <div style={{ color:'white'}} className="row">
-                <FooterCol key={1} menuTitle="Services" menuItems={services} />
+                <FooterCol  key={1} menuTitle="Services" menuItems={services} />
                 <FooterCol key={2} menuTitle="Gift Items" menuItems={giftItem} />
                 <FooterCol key={3} menuTitle="Our Address" menuItems={ourAddress}>
                     <div className="mt-5">

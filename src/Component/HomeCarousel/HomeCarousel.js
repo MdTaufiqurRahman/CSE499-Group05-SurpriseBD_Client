@@ -6,6 +6,7 @@ import pic_3 from "../../images/pic_3.jpg";
 import './HomeCarousel.css'
 
 const HomeCarousel = () => {
+
   return (
     <div className="container pt-2 mt-3" style={{display:'center',
     marginLeft: "auto",
@@ -17,24 +18,24 @@ const HomeCarousel = () => {
         <Carousel.Item>
           <img className="d-block w-100 " src={pic_2} alt="First slide" />
           <Carousel.Caption>
-            <h3 className="text-light">Show Your Love</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 style={{color:"#7CFC00"}}>Show Your Love</h3>
+            <p style={{color:"#7CFC00"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100 " src={pic_1} alt="Second slide" />
 
           <Carousel.Caption>
-            <h3 className="text-light">Customized Gift</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 style={{color:"maroon"}}>Customized Gift</h3>
+            <p style={{color:"maroon"}} >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100 " src={pic_3} alt="Third slide" />
 
           <Carousel.Caption>
-            <h3 className="text-light">Spread Happiness</h3>
-            <p>
+            <h3 style={{color:"#F0F8FF"}}>Spread Happiness</h3>
+            <p style={{color:"#F0F8FF"}}>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
           </Carousel.Caption>
