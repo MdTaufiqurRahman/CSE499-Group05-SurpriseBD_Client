@@ -7,21 +7,22 @@ import './HomeCarousel.css'
 
 const HomeCarousel = () => {
   return (
-    <div className="container mt-3" style={{display:'center',
+    <div className="container pt-2 mt-3" style={{display:'center',
     marginLeft: "auto",
     marginRight: "auto",
-    width: "62%"}}>
+    width: "62%"
+    }}>
 
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src={pic_2} alt="First slide" />
+          <img className="d-block w-100 " src={pic_2} alt="First slide" />
           <Carousel.Caption>
             <h3 className="text-light">Show Your Love</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={pic_1} alt="Second slide" />
+          <img className="d-block w-100 " src={pic_1} alt="Second slide" />
 
           <Carousel.Caption>
             <h3 className="text-light">Customized Gift</h3>
@@ -29,7 +30,7 @@ const HomeCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={pic_3} alt="Third slide" />
+          <img className="d-block w-100 " src={pic_3} alt="Third slide" />
 
           <Carousel.Caption>
             <h3 className="text-light">Spread Happiness</h3>
