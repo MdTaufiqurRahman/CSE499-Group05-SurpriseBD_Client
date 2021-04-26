@@ -11,6 +11,7 @@ import Footer from './Component/Footer/Footer';
 import Contact from './Component/Contact/Contact';
 import { createContext, useState } from 'react';
 import AboutUs from './Component/AboutUs/AboutUs';
+import CustomizeOrder from './Component/CustomizeOrder/CustomizeOrder';
 
 export const UserContext = createContext();
 
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact></Contact>
+        </Route>
+        <Route path="/customized">
+          <CustomizeOrder></CustomizeOrder>
         </Route>
         <Route exact path="/">
           <Home />

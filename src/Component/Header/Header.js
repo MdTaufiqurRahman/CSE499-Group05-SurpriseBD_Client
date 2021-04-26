@@ -2,40 +2,28 @@ import React, { useContext } from "react";
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
-import header from '../../images/header.png';
 import './Header.css';
+import { Form, FormControl, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
     const [loggedIn, setLoggedIn, name, setName] = useContext(UserContext);
 
   return (
-    <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})` }} className="header">
-    <nav className="nav">
-        <ul>
-        
-            <li>
-                <Link to="/home">Home</Link>
-            </li>
-            <li>
-                <Link to="/login">Login</Link>
-            </li>
-            <li>
-                <Link to="/about">About Us</Link>
-            </li>
-            <li>
-                <Link className="btn-book" to="/gift">Gift Item</Link>
-            </li>
-            <li>
-                <Link to="/contact">Contact Us</Link>
-            </li>
-            
-        </ul>
-        {
+
+    <div>
+    <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="/home">Surprise BD</Navbar.Brand>
+    <Nav className="mr-auto mt-3">
+      <Nav.Link href="/home">Home</Nav.Link>
+      <Nav.Link href="/customized">Customized Order</Nav.Link>
+      <Nav.Link href="/about">About Us</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
+      <Nav.Link href="/login">Login</Nav.Link>
+      <Nav.Link> {
                     loggedIn?  
-                        <h6 style={{color:"white", marginLeft:"450px"}} >
-                            <span style={{color:"orange"}}>| </span>
-                            Welcome, {name}
-                        </h6>
+                        <p className="text-light" >
+                            <span className="text-warning"> | </span> Welcome, {name}   
+                        </p>
                     : <>
                         <Link style={{textDecoration:"none", color:"white"}} to="/login">
                             <Button size="small" style={{background:"red", color:"orange"}}>
@@ -43,13 +31,19 @@ const Header = () => {
                             </Button>
                         </Link>
                     </>
-                } 
-    </nav>
-      <div className="title-container" style={{ marginTop:'120px'}}>
-          <h1 style={{fontSize:'70px'}}>SURPRISE BD</h1>
-          <h2>SPREAD A LITTLE HAPPINESS</h2>
-      </div>
-</div>
+                } </Nav.Link>
+     
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-info" className="mr-sm-2 bg-warning">Search</Button>
+    </Form>
+   </Navbar>
+    </div>
+    
+   
+     
+
   );
 };
 
