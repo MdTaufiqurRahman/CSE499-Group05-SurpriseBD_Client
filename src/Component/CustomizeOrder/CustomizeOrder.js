@@ -1,11 +1,130 @@
-import React from 'react';
+import React from "react";
+import { useForm } from "react-hook-form";
+import CustomizeCalender from "../CustomizeCalendar/CustomizeCalender";
 
 const CustomizeOrder = () => {
-    return (
-        <div className="container" style={{marginBottom:"18%"}}>
-            <h1>This page is coming soon</h1>
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) =>{
+    alert('Order has been customized successfully.');
+  }
+
+  console.log(watch("example"));
+  return (
+    <div>
+     <CustomizeCalender></CustomizeCalender>
+      <form style={{marginTop:"-170px"}} className="container" onSubmit={handleSubmit(onSubmit)}>
+        <div className="form-group">
+          <input
+            type="text"
+            {...register("name", { required: true })}
+            name="name"
+            placeholder="Your Name"
+            className="form-control"
+          />
+          {errors.name && (
+            <span className="text-danger">This field is required</span>
+          )}
         </div>
-    );
+        <div className="form-group">
+          <input
+            type="text"
+            {...register("phone", { required: true })}
+            name="phone"
+            placeholder="Phone Number"
+            className="form-control"
+          />
+          {errors.phone && (
+            <span className="text-danger">This field is required</span>
+          )}
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            {...register("email", { required: true })}
+            name="email"
+            placeholder="Email"
+            className="form-control"
+          />
+          {errors.email && (
+            <span className="text-danger">This field is required</span>
+          )}
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            {...register("address", { required: true })}
+            name="address"
+            placeholder="Address To Deliver"
+            className="form-control"
+          />
+          {errors.address && (
+            <span className="text-danger">This field is required</span>
+          )}
+        </div>
+
+        <div className="form-group row">
+          <div className="col-4">
+            <select
+              className="form-control"
+              name="giftType"
+              {...register("giftType", { required: true })}
+            >
+              <option disabled={false} value="Not set">
+                Select Gift Type
+              </option>
+              <option value="Birthday Gift">Birthday Gift</option>
+              <option value="Anniversary Gift">Anniversary Gift</option>
+              <option value="Gifts For Parents">Gifts for Parents</option>
+              <option value="Gift For Him/Her">Gift For Him/Her</option>
+              <option value="Gift For Babies">Gift For Babies</option>
+              <option value="Not set">Other</option>
+            </select>
+            {errors.giftType && (
+              <span className="text-danger">This field is required</span>
+            )}
+          </div>
+
+          <div className="col-4">
+            <input
+              {...register("Quantity", { required: true })}
+              className="form-control"
+              name="Quantity"
+              placeholder="Quantity"
+              type="number"
+            />
+            {errors.Quantity && (
+              <span className="text-danger">This field is required</span>
+            )}
+          </div>
+          <div className="col-4">
+            <select
+              className="form-control"
+              name="Venue"
+              {...register("Venue", { required: false })}
+            >
+              <option disabled={false} value="Not set">
+                Select Venue Type If Needed
+              </option>
+              <option value="Restaurant">Restaurant</option>
+              <option value="Resort">Resort</option>
+              <option value="Not set">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="form-group text-right">
+          <button type="submit" className="btn btn-primary">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
 export default CustomizeOrder;
