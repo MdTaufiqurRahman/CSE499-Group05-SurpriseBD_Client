@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import CustomClock from "../CustomClock/CustomClock";
 import CustomizeCalender from "../CustomizeCalendar/CustomizeCalender";
 
 const CustomizeOrder = () => {
@@ -9,16 +10,30 @@ const CustomizeOrder = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) =>{
-    alert('Order has been customized successfully.');
-  }
+  const onSubmit = (data) => {
+    alert("Order has been customized successfully.");
+  };
 
   console.log(watch("example"));
   return (
-    <div>
-     <CustomizeCalender></CustomizeCalender>
-      <form style={{marginTop:"-170px"}} className="container" onSubmit={handleSubmit(onSubmit)}>
+    <div className="pb-5" style={{backgroundColor:"LightBlue"}}>
+      <h1 className="text-center text-black font-weight-bold p-3">Customize Your Order</h1>
+
+      <div className="row-1 d-flex justify-content-center">
+        <div className="col-8">
+          <CustomizeCalender></CustomizeCalender>
+        </div>
+        <div className="col-4">
+          <CustomClock></CustomClock>
+        </div>
+      </div>
+      <form
+        style={{ marginTop: "-170px", paddingBottom:"10px" }}
+        className="container bg-dark pt-4 pb-3 border border-dark"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="form-group">
+          <h3 className="text-white">Provide your information</h3>
           <input
             type="text"
             {...register("name", { required: true })}
@@ -118,7 +133,7 @@ const CustomizeOrder = () => {
         </div>
 
         <div className="form-group text-right">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-warning">
             Send
           </button>
         </div>
