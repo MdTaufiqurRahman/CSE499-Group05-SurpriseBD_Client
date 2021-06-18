@@ -16,7 +16,7 @@ const CustomizeOrder = () => {
 
   console.log(watch("example"));
   return (
-    <div className="pb-5" style={{backgroundColor:"LightBlue"}}>
+    <div className="pb-5 bg-light" >
       <h1 className="text-center text-black font-weight-bold p-3">Customize Your Order</h1>
 
       <div className="row-1 d-flex justify-content-center">
@@ -27,8 +27,8 @@ const CustomizeOrder = () => {
           <CustomClock></CustomClock>
         </div>
       </div>
+      
       <form
-        style={{ marginTop: "-170px", paddingBottom:"10px" }}
         className="container bg-dark pt-4 pb-3 border border-dark"
         onSubmit={handleSubmit(onSubmit)}
       >
