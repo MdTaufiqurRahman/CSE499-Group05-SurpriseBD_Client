@@ -12,6 +12,7 @@ import Contact from './Component/Contact/Contact';
 import { createContext, useState } from 'react';
 import AboutUs from './Component/AboutUs/AboutUs';
 import CustomizeOrder from './Component/CustomizeOrder/CustomizeOrder';
+import Shop from './Component/Shop/Shop';
 
 export const UserContext = createContext();
 
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/customized">
           <CustomizeOrder></CustomizeOrder>
+        </Route>
+        <Route>
+          <Shop path="/shop"></Shop>
         </Route>
         <Route exact path="/">
           <Home />
