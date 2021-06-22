@@ -14,9 +14,9 @@ const Product = (props) => {
       </div>
 
       <div className="ml-5">
-        <h4 className="product-name">
-          <Link to={"/product/" + key}>{name}</Link>
-        </h4>
+        <h5 className="product-name">
+          <Link className="link" to={"/product/" + key}>{name}</Link>
+        </h5>
         <br />
         <p>
           <small>by: {seller}</small>

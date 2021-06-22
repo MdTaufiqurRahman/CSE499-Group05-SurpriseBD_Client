@@ -1,19 +1,28 @@
-.product{
-    display:flex;
-    border-bottom: 1px solid lightgrey;
-    margin-bottom:  5px;
-    padding-bottom: 5px;
-    margin-right: 5px;
+.product {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
 }
-.product-name{
-    color:blue;
-    font-weight: 400;
+.product-name {
+  color: black;
+  font-weight: 400;
+  font-family: "Bookman, serif";
+  text-align: "justify";
 }
-.main-button{
-    background-color:goldenrod;
-    width:150px;
-    height:30px;
-    border: 1px solid darkgrey;
-    border-radius:5px;
-    cursor: pointer;
+
+.main-button {
+  background-color: goldenrod;
+  width: 150px;
+  height: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.link {
+  color: rgb(48, 0, 0);
+  font-size: 17px;
+  font-weight: bolder;
 }
