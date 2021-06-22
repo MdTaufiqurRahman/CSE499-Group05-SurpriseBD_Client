@@ -32,7 +32,7 @@ const Footer = () => {
                 <FooterCol key={3} menuTitle="Our Address" menuItems={ourAddress}>
                     <div className="mt-5">
                         <h6>Call now</h6>
-                        <button className="btn btn-warning">+8801521416033</button>
+                        <button className="btn btn-danger">+8801521416033</button>
                     </div>
                 </FooterCol>
             </div>

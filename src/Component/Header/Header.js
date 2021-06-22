@@ -36,7 +36,7 @@ const Header = () => {
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info" className="mr-sm-2 bg-warning">Search</Button>
+      <Button variant="outline-info" className="mr-sm-2 bg-danger">Search</Button>
     </Form>
    </Navbar>
     </div>
