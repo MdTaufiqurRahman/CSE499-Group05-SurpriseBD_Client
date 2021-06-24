@@ -7,7 +7,7 @@ import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brand
 const Footer = () => {
 
     return (
-        <MDBFooter  className="font-small pt-4 mt-4 footer-area">
+        <MDBFooter  className="font-small pt-4 mt-4 ml-5 footer-area">
         <MDBContainer fluid className="text-center text-md-left">
           <MDBRow>
             <MDBCol md="3">
@@ -18,19 +18,19 @@ const Footer = () => {
             </MDBCol>
             <MDBCol md="3">
               <h5 className="title text-primary">Services</h5>
-                <p>Emergency Care</p>
-                <p>Gift Selection</p>
-                <p>For Special Help</p>
-                <p>Gift Selection</p>
-                <p>Venue Selection</p>
+                <p>Emergency Special Care</p>
+                <p>Gift Selection Item</p>
+                <p>For Special Help </p>
+                <p>Gift Selection Item</p>
+                <p>Venue Selection Item</p>
             </MDBCol>
             <MDBCol md="3">
               <h5 className="title text-primary">Gift Item</h5>
-                <p>Birthday Gift</p>
-                <p>Anniversary Gift</p>
-                <p>Birthday Gift</p>
-                <p>Birthday Gift</p>
-                <p>Birthday Gift</p>
+                <p>Birthday Gift Item</p>
+                <p>Anniversary Gift Item</p>
+                <p>Birthday Gift Item</p>
+                <p>Birthday Gift Item</p>
+                <p>Birthday Gift Item</p>
             </MDBCol>
             <MDBCol md="3">
               <h5 className="title text-primary">Contact</h5>
