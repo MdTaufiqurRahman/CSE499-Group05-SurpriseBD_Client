@@ -46,7 +46,8 @@ const Contact = () => {
                  borderRadius: '5px',
                  border: '1px solid gray',
                  marginBottom: '30px',
-                 backgroundColor:'orange'
+                 color:'white',
+                 backgroundColor:'#dc3545'
              }} type="submit" value="Submit"/>
             </form>
 
