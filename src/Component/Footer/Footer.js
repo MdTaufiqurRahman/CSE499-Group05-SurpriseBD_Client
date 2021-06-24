@@ -1,47 +1,58 @@
 import React from 'react';
-import FooterCol from './FooterCol';
+import './Footer.css';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
 
-    const services = [
-        { name: "Emergency care", link: "/emergency" },
-        { name: "Gift selection", link: "/gift-selection" },
-        { name: "Venue selection", link: "/venue-selection" },
-        { name: "Gift selection", link: "/gift-selection" },
-        { name: "Venue selection", link: "/venue-selection" },
-        
-    ]
-    const giftItem = [
-        { name: "Birthday gift", link: "/birthday" },
-        { name: "Anniversary gift", link: "/anniversary-gift" },
-        { name: "Other gifts", link: "/Other-gifts" },
-        { name: "Anniversary gift", link: "/anniversary-gift" },
-        { name: "Other gifts", link: "/Other-gifts" },
-       
-    ]
-    const ourAddress = [
-        { name: "Dhaka - 1216 Mirpur", link: "/contact" },
-        { name: "Bangladesh", link: "/contact" },
-    ]
     return (
-        <footer style={{backgroundColor:'#20232a'}} className="footer-area">
-        <div className="container">
-            <div style={{ color:'white'}} className="row">
-                <FooterCol  key={1} menuTitle="Services" menuItems={services} />
-                <FooterCol key={2} menuTitle="Gift Items" menuItems={giftItem} />
-                <FooterCol key={3} menuTitle="Our Address" menuItems={ourAddress}>
-                    <div className="mt-5">
-                        <h6>Call now</h6>
-                        <button className="btn btn-danger">+8801521416033</button>
-                    </div>
-                </FooterCol>
-            </div>
-            <div className="copyright text-center mt-5" >
-                <p style={{ color: 'white', paddingBottom:'20px'}}>Copyright @SURPRISE BD {(new Date()).getFullYear()} All Rights Reserved</p>
-            </div>
-        </div>
+        <MDBFooter  className="font-small pt-4 mt-4 footer-area">
+        <MDBContainer fluid className="text-center text-md-left">
+          <MDBRow>
+            <MDBCol md="3">
+              <h5 className="title text-primary">About Us</h5>
+              <p>Lorem ipsum dolored sitte amet consectur addipsdddisicing elit. Numquam quisquam eligendi tenetur quibusdam reiciendis soluta maioorrees vero dolores enegry by the work Loremed ipsum dolor sitt amet consectetur adipisicing elit then the other part.</p>
+              <i class="fab fa-facebook-square"></i>
 
-    </footer>
+            </MDBCol>
+            <MDBCol md="3">
+              <h5 className="title text-primary">Services</h5>
+                <p>Emergency Care</p>
+                <p>Gift Selection</p>
+                <p>For Special Help</p>
+                <p>Gift Selection</p>
+                <p>Venue Selection</p>
+            </MDBCol>
+            <MDBCol md="3">
+              <h5 className="title text-primary">Gift Item</h5>
+                <p>Birthday Gift</p>
+                <p>Anniversary Gift</p>
+                <p>Birthday Gift</p>
+                <p>Birthday Gift</p>
+                <p>Birthday Gift</p>
+            </MDBCol>
+            <MDBCol md="3">
+              <h5 className="title text-primary">Contact</h5>
+              <p> Bashundhara R/A - 1219 <br />Dhaka, Bangladesh </p>
+              <ul className="social-media list-inline">
+                            <li className="list-inline-item"><a href="https://www.facebook.com/taufiqur.anik/"><FontAwesomeIcon className="icon active-icon" icon={faFacebookF} /></a></li>
+                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className="icon" icon={faGooglePlusG} /></a></li>
+                            <li className="list-inline-item"><a href="https://www.instagram.com/taufiqur_anik/"><FontAwesomeIcon className="icon" icon={faInstagram} /></a></li>
+                        </ul>
+                        <div className="mt-3 text-primary">
+                            <h5>Call now</h5>
+                            <button className="btn btn-danger">+8801718003362</button>
+                        </div>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+        <div className="footer-copyright text-center py-3">
+          <MDBContainer fluid>
+            &copy; {new Date().getFullYear()} All Rights Reserved
+          </MDBContainer>
+        </div>
+      </MDBFooter>
     );
 };
 
