@@ -103,7 +103,7 @@ function Login() {
       
       <label
         htmlFor="newUser"
-        className="text-white font-weight-bold m-3 p-3 border border-warning bg-secondary"
+        className=" btn btn-danger text-white font-weight-bold m-3 p-3 border"
       >
         Please check the box for sign up
         <input
@@ -146,12 +146,13 @@ function Login() {
           <br />
           <input
             type="submit"
-            class="btn btn-secondary"
+            className="btn btn-primary"
+            style={{width: '62%'}}
             value={newUser ? "Sign Up" : "Sign in"}
           />
         </div>
 
-        <Button variant="secondary" onClick={() => resetPassword(user.email)}>
+        <Button className="btn btn-danger" style={{width: '60%'}} onClick={() => resetPassword(user.email)}>
           Forget password
         </Button>
         <p style={{ color: "red" }}>{user.error}</p>
@@ -163,13 +164,13 @@ function Login() {
         <div className=" d-flex justify-content-sm-center row-1">
           <div className="cl-6 mr-3">
           {user.isSignedIn ? (
-            <Button variant="secondary" onClick={signOut}>
+            <Button onClick={signOut}>
               Sign out
             </Button>
           ) : (
             <Button
-              variant="secondary"
-              style={{ marginLeft: "10px" }}
+              
+              style={{ marginLeft: "0px", marginRight: "12px" }}
               onClick={googleSignIn}
             >
               <img src={googleimg} alt=""></img>
@@ -177,9 +178,9 @@ function Login() {
             </Button>
           )}
           </div>
-
+            <br />
           <div className="cl-6 ">
-          <Button variant="secondary" onClick={fbSignIn}>
+          <Button  onClick={fbSignIn}>
             <img src={fbimg} alt=""></img>
             Sign in using Facebook
           </Button>

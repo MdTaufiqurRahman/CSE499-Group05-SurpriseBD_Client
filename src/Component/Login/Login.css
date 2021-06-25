@@ -1,22 +1,14 @@
 .login-form {
-    border: 10px solid rgb(250, 205, 6);
+    border: 1px solid gainsboro;
     margin: 10px 120px;
     padding: 30px 10px;
-    border-radius: 20px;
-    background-color: rgb(219, 219, 219);
-}
-
-.login-form  Button{
-    size: 5px;
-    padding: 12px;
-    font-size:10px;
-    text-align:center;
+    border-radius: 10px;
+    background-color: whitesmoke;
 }
 
 .login-form  Button img{
-    width: 10px;
-    height: inherit;
-    padding-right: 2px;
+    width: 20px;
+    margin-right: 20px;
 }
 .checkbox{
     zoom: 1.5;

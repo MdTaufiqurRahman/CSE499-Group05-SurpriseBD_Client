@@ -18,8 +18,7 @@ const Header = () => {
           <Nav.Link href="/about">About Us</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
           <Nav.Link href="/login">Login</Nav.Link>
-          <Nav.Link variant="danger" >{loggedInUser.email}</Nav.Link>
-          <Nav.Link onClick={() => setLoggedInUser({})}>Sign Out</Nav.Link>
+          <Nav.Link variant="danger" >{loggedInUser.name}</Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
