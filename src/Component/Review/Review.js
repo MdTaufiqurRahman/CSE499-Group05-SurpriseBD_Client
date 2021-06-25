@@ -8,16 +8,23 @@ import {
 import { Button } from "react-bootstrap";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import Cart from "../Cart/Cart";
+import { useHistory } from "react-router";
 
 const Review = () => {
   const [cart, setCart] = useState([]);
   const [orderPlaced, setOrderPlaced] = useState(false);
 
-  const handlePlacedOrder = () => {
-    processOrder();
-    setCart([]);
-    setOrderPlaced(true);
+  const history = useHistory()
+  const handleProceedCheckout = () => {
+    history.push('/shipment')
   };
+
+
+  // const handlePlacedOrder = () => {
+  //   processOrder();
+  //   setCart([]);
+  //   setOrderPlaced(true);
+  // };
 
   const removeProduct = (productKey) => {
     const newCart = cart.filter((pd) => pd.key !== productKey);
@@ -64,8 +71,8 @@ const Review = () => {
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
-          <Button style={{marginBottom:'30px'}} variant="danger"  onClick={handlePlacedOrder}>
-            Place Order
+          <Button style={{marginBottom:'30px'}} variant="danger"  onClick={handleProceedCheckout}>
+            Proceed Checkout
           </Button>
         </Cart>
       </div>

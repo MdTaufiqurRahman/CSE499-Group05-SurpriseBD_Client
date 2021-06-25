@@ -1,22 +1,29 @@
-.auth-form-group{
-    min-width: 200px;
-    width:400px;
-    margin:auto;
-    margin-top:50px;
-    border:1px solid lightgray;
-    padding:10px 30px;
-    border-radius:10px;
+.login-form {
+    border: 10px solid rgb(250, 205, 6);
+    margin: 10px 120px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+}
+
+.login-form  Button{
+    size: 5px;
+    padding: 12px;
+    font-size:10px;
     text-align:center;
 }
-.auth-provider-section{
-display:flex;
-align-items:center; 
-border:1px solid lightgray;
-border-radius:30px;
-padding:2px 20px;
- margin:0 0 5px 0;
-height:35px;
+
+.login-form  Button img{
+    width: 10px;
+    height: inherit;
+    padding-right: 2px;
 }
-.auth-form-group input{
-    padding-left:20px
+.checkbox{
+    zoom: 1.5;
+    vertical-align: middle;
+    position: relative;
 }
+
+
+
+
