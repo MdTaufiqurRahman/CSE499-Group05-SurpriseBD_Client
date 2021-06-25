@@ -28,7 +28,7 @@ const CustomizeOrder = () => {
         </div>
       </div>
       
-      <form
+      <form style={{borderRadius:'10px'}}
         className="container bg-dark pt-4 pb-3 border border-dark"
         onSubmit={handleSubmit(onSubmit)}
       >

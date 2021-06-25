@@ -75,6 +75,7 @@ function Login() {
     };
   
     const handleSubmit = (e) => {
+
       //console.log(user.email, user.password);
       if (newUser && user.email && user.password) {
         createUserWithEmailAndPassword(user.name, user.email, user.password).then(
@@ -98,8 +99,10 @@ function Login() {
     };
   
   return (
+
+
     <div className="container p-5" style={{ textAlign: "center", padding:"5px" }}>
-      <h1>Surprise BD Login</h1>
+      <h1> <b>Surprise BD Login</b></h1>
       
       <label
         htmlFor="newUser"

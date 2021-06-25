@@ -39,15 +39,9 @@ const Contact = () => {
                  border: '1px solid gray',
              }} type="text" placeholder="Your Phone No" required/>
              <br/>
-             <input style={{
-                 padding:'10px',
-                 width:'31%',
-                 marginTop:'10px',
-                 borderRadius: '5px',
-                 border: '1px solid gray',
-                 marginBottom: '30px',
-                 color:'white',
-                 backgroundColor:'#dc3545'
+             <input className="btn btn-danger mt-3" style={{
+                 width:'30%',
+                 
              }} type="submit" value="Submit"/>
             </form>
 
