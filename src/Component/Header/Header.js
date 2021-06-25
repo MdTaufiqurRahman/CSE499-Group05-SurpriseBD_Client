@@ -12,13 +12,23 @@ const Header = () => {
     <div>
       <Navbar bg="dark" variant="dark">
         <Nav className="mr-auto mt-auto">
-        <Navbar.Brand href="/home"> <b>Surprise BD</b> </Navbar.Brand>
+          <Navbar.Brand href="/home">
+            {" "}
+            <b>Surprise BD</b>{" "}
+          </Navbar.Brand>
           <Nav.Link href="/home">Home</Nav.Link>
           <Nav.Link href="/customized">Customized Order</Nav.Link>
           <Nav.Link href="/about">About Us</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/login">Login</Nav.Link>
-          <Nav.Link className="text-warning"> <b>{loggedInUser.name} </b> </Nav.Link>
+          {loggedInUser.name ? (
+            <Nav.Link onClick={() => setLoggedInUser({})}>Sign Out</Nav.Link>
+          ) : (
+            <Nav.Link href="/login">Login</Nav.Link>
+          )}
+          <Nav.Link className="text-warning">
+            {" "}
+            <b>{loggedInUser.name} </b>{" "}
+          </Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
