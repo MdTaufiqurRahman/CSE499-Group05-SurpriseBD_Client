@@ -1,16 +1,18 @@
 .footer-area{
     background-image: url(../../images/footer-bg.png);
     background-size: cover;
+    background-color: rgb(51, 62, 79);
+    color: rgb(156, 169, 190);
 }
 .social-media .icon{
     height: 40px;
     width: 40px;
-    color: black;
+    color:white;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
 }
 .social-media .active-icon{
-    background-color: black ;
+    background-color:rgb(94, 82, 202) ;
     color:white;
 }

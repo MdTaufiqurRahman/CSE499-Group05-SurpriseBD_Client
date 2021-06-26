@@ -20,7 +20,8 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
 
   return (
-    <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
+    <div className="bg">
+       <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Header></Header>
         <Switch>
@@ -58,6 +59,7 @@ function App() {
         <Footer></Footer>
       </Router>
     </UserContext.Provider>
+    </div>
   );
 }
 

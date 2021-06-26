@@ -1,15 +1,11 @@
 .login-form {
     border: 1px solid gainsboro;
     margin: 10px 120px;
-    padding: 30px 10px;
+    padding: 40px 20px;
     border-radius: 10px;
     background-color: whitesmoke;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    height:60%;
 }
-
-.login-form:hover {
-    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.8);
-  }
 
 .login-form  Button img{
     width: 20px;

@@ -102,11 +102,12 @@ function Login() {
 
 
     <div className="container p-5" style={{ textAlign: "center", padding:"5px" }}>
-      <h1> <b>Surprise BD Login</b></h1>
+      <h1> <b>Login</b></h1>
       
       <label
         htmlFor="newUser"
-        className=" btn btn-danger text-white font-weight-bold m-3 p-3 border"
+        className=" btn btn-primary text-bg font-weight-bold m-3 p-3"
+        style={{width: "77%"}}
       >
         Please check the box for sign up
         <input
@@ -149,13 +150,13 @@ function Login() {
           <br />
           <input
             type="submit"
-            className="btn btn-primary"
+            className="btn btn-warning"
             style={{width: '62%'}}
             value={newUser ? "Sign Up" : "Sign in"}
           />
         </div>
 
-        <Button className="btn btn-danger" style={{width: '60%'}} onClick={() => resetPassword(user.email)}>
+        <Button className="btn btn-light" style={{width: '60%'}} onClick={() => resetPassword(user.email)}>
           Forget password
         </Button>
         <p style={{ color: "red" }}>{user.error}</p>
