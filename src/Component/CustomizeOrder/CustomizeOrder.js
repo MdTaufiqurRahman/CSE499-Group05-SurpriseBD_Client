@@ -134,7 +134,7 @@ const CustomizeOrder = () => {
         </div>
 
         <div className="form-group text-right">
-          <button type="submit" className="btn btn-danger">
+          <button type="submit" className="btn btn-primary">
             Send
           </button>
         </div>
