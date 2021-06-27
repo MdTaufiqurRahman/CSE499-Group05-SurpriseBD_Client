@@ -71,7 +71,7 @@ const Review = () => {
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
-          <Button style={{marginBottom:'30px'}} variant="danger"  onClick={handleProceedCheckout}>
+          <Button style={{marginBottom:'30px'}} variant="primary"  onClick={handleProceedCheckout}>
             Proceed Checkout
           </Button>
         </Cart>

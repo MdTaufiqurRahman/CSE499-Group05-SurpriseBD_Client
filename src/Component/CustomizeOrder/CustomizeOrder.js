@@ -16,6 +16,7 @@ const CustomizeOrder = () => {
 
   console.log(watch("example"));
   return (
+    
     <div className="pb-5 bg-light" >
       <h1 className="text-center text-black font-weight-bold p-3">Customize Your Order</h1>
 

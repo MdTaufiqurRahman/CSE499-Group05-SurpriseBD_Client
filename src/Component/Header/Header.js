@@ -9,21 +9,21 @@ const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
   return (
-    <div>
-      <Navbar bg="dark" variant="dark">
+    <div className="header">
+      <Navbar variant="dark">
         <Nav className="mr-auto mt-auto">
           <Navbar.Brand href="/home">
             {" "}
-            <b>Surprise BD</b>{" "}
+            <b style={{fontSize:'22px'}}>Surprise BD</b>{" "}
           </Navbar.Brand>
-          <Nav.Link href="/home">Home</Nav.Link>
-          <Nav.Link href="/customized">Customized Order</Nav.Link>
-          <Nav.Link href="/about">About Us</Nav.Link>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="/home">Home</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="/customized">Customized Order</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="/about">About Us</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="/contact">Contact</Nav.Link>
           {loggedInUser.name ? (
-            <Nav.Link onClick={() => setLoggedInUser({})}>Sign Out</Nav.Link>
+            <Nav.Link style={{color:'white'}} onClick={() => setLoggedInUser({})}>Sign Out</Nav.Link>
           ) : (
-            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link style={{color:'white'}} href="/login">Login</Nav.Link>
           )}
           <Nav.Link className="text-warning">
             {" "}

@@ -1,26 +1,9 @@
 .header{
-    border: 4px solid black;
-    height: 500px;
-    background-position: center center;
-    background-size: 100% 100%;
+    width: 100%;
+    position:sticky;
+    background-color: rgb(51, 62, 79);
+    top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+    font-size: 18px;
 }
-
-.title-container{
-    color: rgba(255, 255, 255, 0.699);
-    text-align: center;
-    font-size: 2em;
-}
-.nav{
-    margin-left: 20px;
-}
-.nav li{
-    display: inline;
-    margin-left: 80px;
-    
-  }
-  
-  .nav a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.877);
-    font-weight: bold;
-  }

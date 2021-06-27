@@ -39,7 +39,7 @@ const Contact = () => {
                  border: '1px solid gray',
              }} type="text" placeholder="Your Phone No" required/>
              <br/>
-             <input className="btn btn-danger mt-3" style={{
+             <input className="btn btn-primary mt-3" style={{
                  width:'30%',
                  
              }} type="submit" value="Submit"/>

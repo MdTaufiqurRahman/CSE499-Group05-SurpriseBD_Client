@@ -3,6 +3,7 @@
     background-size: cover;
     background-color: rgb(51, 62, 79);
     color: rgb(156, 169, 190);
+    font-family: 'Josefin Sans', sans-serif;
 }
 .social-media .icon{
     height: 40px;
@@ -15,4 +16,8 @@
 .social-media .active-icon{
     background-color:rgb(94, 82, 202) ;
     color:white;
+}
+
+.top{
+    border-top: 1px dashed rgb(156, 169, 190);
 }

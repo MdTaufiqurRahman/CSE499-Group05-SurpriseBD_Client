@@ -10,27 +10,27 @@ const Footer = () => {
         <MDBFooter  className="font-small pt-4 mt-4 footer-area">
         <MDBContainer fluid className="text-center text-md-left">
           <MDBRow>
-            <MDBCol md="3">
+            <MDBCol md="5">
               <h5 className="title text-rgb(156, 169, 190)">About Us</h5>
-              <p>Lorem ipsum dolored sitte amet consectur addipsdddisicing elit. Numquam quisquam eligendi tenetur quibusdam reiciendis soluta maioorrees vero dolores enegry by the work Loremed ipsum dolor sitt amet consectetur adipisicing elit then the other part.</p>
+              <p style={{textAlign:"justify"}} >People willing to give surprises for their special ones can contact us and we can arrange surprises and gifts for their special ones. We can arrange gifts and surprises at the exact time our customer want. It can be at 12 am sharp. Customers can share their thoughts or ideas for a surprise with us and we can help them arrange surprises. We will take responsibility for arranging the party on behalf of our customer(Pay and go service). People can use our web app to send gifts to their close ones from one city to another.</p>
               <i class="fab fa-facebook-square"></i>
 
             </MDBCol>
-            <MDBCol md="3">
+            <MDBCol md="2">
               <h5 className="title text-rgb(156, 169, 190)">Services</h5>
                 <p>Emergency Special Care</p>
-                <p>Gift Selection Item</p>
-                <p>For Special Help </p>
-                <p>Gift Selection Item</p>
+                <p>For Gift Selection Item</p>
+                <p>24/7 Open Help center </p>
+                <p>Save your Special Date</p>
                 <p>Venue Selection Item</p>
             </MDBCol>
-            <MDBCol md="3">
+            <MDBCol md="2">
               <h5 className="title text-rgb(156, 169, 190)">Gift Item</h5>
                 <p>Birthday Gift Item</p>
                 <p>Anniversary Gift Item</p>
-                <p>Birthday Gift Item</p>
-                <p>Birthday Gift Item</p>
-                <p>Birthday Gift Item</p>
+                <p>Thank You Gift Item</p>
+                <p>Grandparents Gift Item</p>
+                <p>Children Gift Item</p>
             </MDBCol>
             <MDBCol md="3">
               <h5 className="title text-rgb(156, 169, 190)">Contact</h5>
@@ -47,7 +47,7 @@ const Footer = () => {
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        <div className="footer-copyright text-center py-3">
+        <div className="footer-copyright text-center py-3 top">
           <MDBContainer fluid>
             &copy; {new Date().getFullYear()} All Rights Reserved
           </MDBContainer>

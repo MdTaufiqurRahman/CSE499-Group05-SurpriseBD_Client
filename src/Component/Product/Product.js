@@ -18,20 +18,23 @@ const Product = (props) => {
           <Link className="link" to={"/product/" + key}>{name}</Link>
         </h5>
         <br />
+
         <p>
-          <small>by: {seller}</small>
+          By : {seller}
         </p>
-        <p>&{price}</p>
+
         <p>
-          <small>Only {stock} left in stock - Order soon</small>
+          Only {stock} left in stock - Order soon
         </p>
+
+        <h5> $ {price}</h5>
         {props.showAddToCart && (
           <Button
-            variant="danger"
+            variant="primary"
             onClick={() => props.handleAddProduct(props.product)}
           >
             <FontAwesomeIcon icon={faShoppingCart} />
-            Add to cart
+             Add to cart
           </Button>
         )}
       </div>

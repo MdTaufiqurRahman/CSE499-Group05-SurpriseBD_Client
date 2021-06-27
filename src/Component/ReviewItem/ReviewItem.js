@@ -22,10 +22,10 @@ const ReviewItem = (props) => {
       <h4 className="product-name">{name}</h4>
       <p>Quantity: {quantity}</p>
       <p>
-        <small>$ {price}</small>
+        <h6>$ {price}</h6>
       </p>
       <br />
-      <Button variant="danger" onClick={() => props.removeProduct(key)}>
+      <Button variant="primary" onClick={() => props.removeProduct(key)}>
         Remove
       </Button>
     </div>
