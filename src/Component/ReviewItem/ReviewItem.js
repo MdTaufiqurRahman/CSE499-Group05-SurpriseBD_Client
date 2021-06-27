@@ -5,7 +5,7 @@ const ReviewItem = (props) => {
   const { name, img, quantity, key, price } = props.product;
   const reviewItemStyle = {
     borderBottom: "1px solid lightgray",
-    marginBottom: "5px",
+    marginBottom: "10px",
     paddingBottom: "10px",
     marginLeft: "200px",
   };
@@ -19,10 +19,10 @@ const ReviewItem = (props) => {
         ></img>
       </div>
 
-      <h4 className="product-name">{name}</h4>
-      <p>Quantity: {quantity}</p>
+      <h4 className="product-name" style={{fontFamily:'sans-serif'}}>{name}</h4>
+      <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>Quantity: {quantity}</p>
       <p>
-        <h6>$ {price}</h6>
+        <h5>$ {price}</h5>
       </p>
       <br />
       <Button variant="primary" onClick={() => props.removeProduct(key)}>

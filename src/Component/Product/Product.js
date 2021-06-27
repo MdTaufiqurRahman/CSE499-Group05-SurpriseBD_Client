@@ -15,15 +15,15 @@ const Product = (props) => {
 
       <div className="ml-5">
         <h5 className="product-name">
-          <Link className="link" to={"/product/" + key}>{name}</Link>
+          <Link style={{fontFamily:'sans-serif'}} className="link" to={"/product/" + key}>{name}</Link>
         </h5>
         <br />
 
-        <p>
+        <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>
           By : {seller}
         </p>
 
-        <p>
+        <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>
           Only {stock} left in stock - Order soon
         </p>
 

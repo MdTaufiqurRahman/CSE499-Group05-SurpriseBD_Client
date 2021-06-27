@@ -1,0 +1,8 @@
+.uk{
+    box-shadow: 5px 8px 20px gray;
+}
+
+.uk:hover{
+    background-color:white;
+    border:none;
+}

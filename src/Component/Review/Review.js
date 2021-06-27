@@ -20,12 +20,6 @@ const Review = () => {
   };
 
 
-  // const handlePlacedOrder = () => {
-  //   processOrder();
-  //   setCart([]);
-  //   setOrderPlaced(true);
-  // };
-
   const removeProduct = (productKey) => {
     const newCart = cart.filter((pd) => pd.key !== productKey);
     setCart(newCart);
