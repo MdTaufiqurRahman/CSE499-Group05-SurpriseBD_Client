@@ -35,7 +35,6 @@ const Cart = (props) => {
         <small>Tax + Vat: {formatNumber(tax)} </small>
       </p>
       <p>Total Price: {grandTotal}</p>
-      <br />
       {
         props.children
       }

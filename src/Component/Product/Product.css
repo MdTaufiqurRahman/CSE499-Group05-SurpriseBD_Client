@@ -2,8 +2,10 @@
   display: flex;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 5px;
+  padding-top: 5px;
   padding-bottom: 5px;
   margin-right: 5px;
+  box-shadow: 2px 1px 2px 1px  gray;
 }
 .product-name {
   color: black;

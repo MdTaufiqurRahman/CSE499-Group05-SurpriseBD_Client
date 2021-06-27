@@ -11,9 +11,7 @@ var androids = [
     starCount: 620,
     img: "https://static.yoursurprise.com/articleimage/groepboxen/86f32074acfc45ce4b59a306d1a5eebe/face-mask_small.jpg?width=263&crop=1%3A1&fbclid=IwAR18KP2Hwmg_S4R3pmPq5xq3fu5254QNb2-ZW0Txz-KjGaT8VHDQc58BB9A",
     url: "https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=https://www.amazon.com/Nine-West-NW-2044RGPK-Gold-Tone/dp/B072KMX19N/ref=sr_1_10?dchild=1&keywords=gift+item&qid=1623992062&sr=8-10?ie=UTF8&adId=A03332262DHW9SCX1W5WM&url=https%3A%2F%2Fwww.amazon.com%2FRCA-M1-Unlocked-Camera-Android%2Fdp%2FB00OSTKZWM%2Fref%3Dsr_1_1%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1499124826%26sr%3D1-1-spons%26keywords%3Dandroid%26psc%3D1&qualifier=1499124825&id=1141793968325395&widgetName=sp_atf",
-    features: [
-     
-    ],
+    features: [],
     price: 57.99,
     shipping: 3.99,
   },
@@ -29,9 +27,7 @@ var androids = [
     starCount: 2318,
     img: "https://static.yoursurprise.com/articleimage/bc/bcc1bfcf5a6aeb0baf1116490369a198/hip-flask-leather-look_small.jpg?width=263&crop=1%3A1&fbclid=IwAR2Yvu4wXgkIs3ne_S4jmZNsweqNZDmEuoEkrWz0UoBkKb1gjIG9fPeq5dg",
     url: "https://www.amazon.com/7-Sectional-Assortment-Thanksgiving-Nut-Cravings/dp/B01LOZ311O/ref=sr_1_21?dchild=1&keywords=gift+item&qid=1623999659&sr=8-21",
-    features: [
-     
-    ],
+    features: [],
     price: 59.99,
     shipping: 7.99,
   },
@@ -54,7 +50,7 @@ var androids = [
   {
     key: "B01LPZD1N6",
     category: "gifts",
-    name: 'Ladies Watch',
+    name: "Ladies Watch",
     seller: "ATOTO",
     wholePrice: "164",
     priceFraction: "90",
@@ -63,9 +59,7 @@ var androids = [
     starCount: 4029,
     img: "https://static.yoursurprise.com/articleimage/ae/aeede2b9b55d61c67a20c150566699c8/wooden-watch_small.jpg?width=263&crop=1%3A1&fbclid=IwAR0Y7gh9G362AqYRqPF2TaqVPExBC6E1ci_Daz_EpheHAoc3_jTRl9TGnP8",
     url: "https://www.amazon.com/Luxury-Little-Diaper-Caddy-Organizer/dp/B07S1DYPT5/ref=sr_1_47?dchild=1&keywords=gift+item&qid=1624029142&sr=8-47",
-    features: [
-      
-    ],
+    features: [],
     price: 164.9,
     shipping: 0,
   },
@@ -81,9 +75,7 @@ var androids = [
     starCount: 4947,
     img: "https://static.yoursurprise.com/articleimage/bf/bf475a88086756602d858478abaf9028/dear-daddy_small.jpg?width=263&crop=1%3A1&fbclid=IwAR1xe9ILABlkxiRytESAEyeHfDI44YtlHz47kwneh5TSxFBBALLkfSbtIKs",
     url: "https://www.amazon.com/100-GREETINGS-Happy-Anniversary-Card/dp/B08QPVVN27/ref=sr_1_2?crid=1GRD9B3IU6Q9H&dchild=1&keywords=anniversary+gift+for+her&qid=1624029692&sprefix=annivers%2Caps%2C442&sr=8-2",
-    features: [
-      
-    ],
+    features: [],
     price: 49.99,
     shipping: 7.99,
   },
@@ -99,9 +91,7 @@ var androids = [
     starCount: 381,
     img: "https://static.yoursurprise.com/articleimage/groepboxen/663f358c4a72002322a679eed94dc948/women-s-hoodies_small.jpg?width=263&crop=1%3A1&fbclid=IwAR2PqD2Qs40sz5Y4qA_EMfspKArPSQdLM99jgfqPRvgYkgb4dH-qKpM2LCw",
     url: "https://www.amazon.com/YouNique-Designs-Anniversary-Coffee-Wedding/dp/B07N8SQM4Y/ref=sr_1_33?crid=ABXW7CPAAXY2&dchild=1&keywords=anniversary+gift+for+her+1+year&qid=1624032577&sprefix=anniversary+gift+for+her%2Caps%2C428&sr=8-33",
-    features: [
-      
-    ],
+    features: [],
     price: 19.94,
     shipping: 7.99,
   },
@@ -146,7 +136,7 @@ var androids = [
     price: 53.99,
     shipping: 7.99,
   },
- 
+
   {
     key: "B072NYXDLY",
     category: "android",
@@ -166,7 +156,7 @@ var androids = [
     price: 68.99,
     shipping: 3.99,
   },
- 
+
   {
     key: "B06XWMQRS6",
     category: "android",
@@ -218,7 +208,7 @@ var androids = [
     price: 29.99,
     shipping: 7.99,
   },
- 
+
   {
     key: "B01JOT42JW",
     category: "gifts",
@@ -420,11 +410,11 @@ var androids = [
     price: 129.99,
     shipping: 7.99,
   },
-  
+
   {
     key: "B01LPZD1B6",
     category: "gifts",
-    name: 'Fathers Day Birthday Gifts Keychain for Dad Men Valentines Day Christmas Gifts for Dad Papa Step Father in Law from Girls Kids Step Daughter to Daddy Father and Daughter Never Truly Part Present',
+    name: "Fathers Day Birthday Gifts Keychain for Dad Men Valentines Day Christmas Gifts for Dad Papa Step Father in Law from Girls Kids Step Daughter to Daddy Father and Daughter Never Truly Part Present",
     seller: "ATOTO",
     wholePrice: "99",
     priceFraction: "90",
@@ -433,16 +423,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/61pBdQywWSS._AC_UL320_.jpg",
     url: "https://www.amazon.com/Birthday-Keychain-Valentines-Christmas-Daughter/dp/B096XKG2VH/ref=sr_1_2?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-2",
-    features: [
-      
-    ],
+    features: [],
     price: 99.9,
     shipping: 0,
-},
-{
+  },
+  {
     key: "B01LPZD1V2",
     category: "gifts",
-    name: 'Harry Potter Gold Snitch Pewter Key Ring',
+    name: "Harry Potter Gold Snitch Pewter Key Ring",
     seller: "ATOTO",
     wholePrice: "140",
     priceFraction: "90",
@@ -451,16 +439,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/817nY8t8HfL._AC_UL320_.jpg",
     url: "https://www.amazon.com/HARRY-POTTER-Gold-Snitch-Pewter/dp/B01J87CRBU/ref=sr_1_7?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-7",
-    features: [
-      
-    ],
+    features: [],
     price: 140.9,
     shipping: 0,
-},
-{
+  },
+  {
     key: "B01LPZD1G5",
     category: "gifts",
-    name: 'Marvel Captain America Shield Pewter Key Ring',
+    name: "Marvel Captain America Shield Pewter Key Ring",
     seller: "ATOTO",
     wholePrice: "130",
     priceFraction: "90",
@@ -469,16 +455,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/61AVslutMZS._AC_UL320_.jpg",
     url: "https://www.amazon.com/Marvel-Captain-America-Shield-Pewter/dp/B0050B4032/ref=sr_1_22?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-22",
-    features: [
-      
-    ],
+    features: [],
     price: 130.9,
     shipping: 0,
-},
-{
+  },
+  {
     key: "B01LPZD1G2",
     category: "gifts",
-    name: 'Lancher Key Chain with (2 Extra Key Rings and Gift Box) Heavy Duty Car Keychain for Men and Women - Black',
+    name: "Lancher Key Chain with (2 Extra Key Rings and Gift Box) Heavy Duty Car Keychain for Men and Women - Black",
     seller: "ATOTO",
     wholePrice: "199",
     priceFraction: "90",
@@ -487,17 +471,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/61QWXfW7GwL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Lancher-Chain-Extra-Rings-Keychain/dp/B01IYA1BK0/ref=sr_1_28?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-28",
-    features: [
-      
-    ],
+    features: [],
     price: 199.9,
     shipping: 10,
- 
-},
-{
+  },
+  {
     key: "B01LPZD1F3",
     category: "gifts",
-    name: '2021 Graduation Gift for him for Her Graduation Keychain Gift Set with Genuine Leather Key chain and Card with Inspirational Quote in Gift Packaging Graduation Gift Class of 2021 Ready to Give!',
+    name: "2021 Graduation Gift for him for Her Graduation Keychain Gift Set with Genuine Leather Key chain and Card with Inspirational Quote in Gift Packaging Graduation Gift Class of 2021 Ready to Give!",
     seller: "ATOTO",
     wholePrice: "125",
     priceFraction: "00",
@@ -506,16 +487,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/51CFoMVocoL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Graduation-Keychain-Genuine-Inspirational-Packaging/dp/B08SCMHJF8/ref=sr_1_31?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-31",
-    features: [
-      
-    ],
-    price: 125.00,
+    features: [],
+    price: 125.0,
     shipping: 9,
-},
-{
+  },
+  {
     key: "B01LPZD1S2",
     category: "gifts",
-    name: 'Keychains Bulk Family Key Ring I Love You To The Moon And Back For Gift',
+    name: "Keychains Bulk Family Key Ring I Love You To The Moon And Back For Gift",
     seller: "ATOTO",
     wholePrice: "120",
     priceFraction: "90",
@@ -524,16 +503,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/617dLUMrAcL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Keychains-Daughter-Brother-Grandma-Grandpa/dp/B073M8LV5R/ref=sr_1_43?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-43",
-    features: [
-      
-    ],
+    features: [],
     price: 120.9,
     shipping: 5,
-},
-{
+  },
+  {
     key: "B01LPZD1E2",
     category: "gifts",
-    name: 'Harry Potter Deathly Hallows Pewter Key Ring,Silver',
+    name: "Harry Potter Deathly Hallows Pewter Key Ring,Silver",
     seller: "ATOTO",
     wholePrice: "64",
     priceFraction: "76",
@@ -542,16 +519,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/81d6+-qJ2DL._AC_UL320_.jpg",
     url: "https://www.amazon.com/HARRY-POTTER-Deathly-Hallows-Pewter/dp/B01J876UHW/ref=sr_1_47?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-47",
-    features: [
-      
-    ],
+    features: [],
     price: 64.76,
     shipping: 5,
-},
-{
+  },
+  {
     key: "B01LPZD1Z3",
     category: "gifts",
-    name: 'Coolcos Key Ring Bracelet Wristlet Keychain Bangle Keyring - Portable Leather Tassel Bracelet Keys Holder Women Gift',
+    name: "Coolcos Key Ring Bracelet Wristlet Keychain Bangle Keyring - Portable Leather Tassel Bracelet Keys Holder Women Gift",
     seller: "ATOTO",
     wholePrice: "154",
     priceFraction: "90",
@@ -560,18 +535,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/61XS4ofXHKS._AC_UL320_.jpg",
     url: "https://www.amazon.com/Coolcos-Bracelets-Wristlet-Keychain-Keyring/dp/B07SP9LPZY/ref=sr_1_41?dchild=1&keywords=key+ring+gifts&qid=1624029747&sr=8-41",
-    features: [
-      
-    ],
+    features: [],
     price: 154.9,
     shipping: 0,
-},
+  },
 
-
-{
+  {
     key: "B01LPZD1Z2",
     category: "gifts",
-    name: 'Barnett’s Chocolate Cookies Birthday Gift Basket for Women & Men Gourmet Happy Birthdays Cake Box Arrangements Husband Wife Mom Dad Unique Cookie Baskets Flavors Idea Boyfriend, Girlfriend',
+    name: "Barnett’s Chocolate Cookies Birthday Gift Basket for Women & Men Gourmet Happy Birthdays Cake Box Arrangements Husband Wife Mom Dad Unique Cookie Baskets Flavors Idea Boyfriend, Girlfriend",
     seller: "ATOTO",
     wholePrice: "150",
     priceFraction: "90",
@@ -580,16 +552,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/91ji4E1+RNS._AC_UL320_.jpg",
     url: "https://www.amazon.com/Barnetts-Chocolate-Birthdays-Arrangements-Girlfriend/dp/B093TPSZV1/ref=sr_1_8?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-8",
-    features: [
-      
-    ],
+    features: [],
     price: 150.9,
     shipping: 5,
-},
-{
+  },
+  {
     key: "B01LPZD1D4",
     category: "gifts",
-    name: 'Locket',
+    name: "Locket",
     seller: "ATOTO",
     wholePrice: "130",
     priceFraction: "90",
@@ -598,16 +568,14 @@ var androids = [
     starCount: 4029,
     img: "https://static.yoursurprise.com/articleimage/9e/9e59724ffd469ca2be209cc9b575698d/name-pendant-square-rhodium_small.jpg?width=263&crop=1%3A1&fbclid=IwAR39N96TuI4qysHuouhziqiyQ9Zu20P7YmJtWE8p85VCvKwW67hXHiRpuMo",
     url: "https://www.amazon.com/Hazel-Creme-Happy-Birthday-Cookie/dp/B07ZSGFPMN/ref=sr_1_9?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-9",
-    features: [
-      
-    ],
+    features: [],
     price: 130.9,
     shipping: 0,
-},
-{
+  },
+  {
     key: "B01LPZD1D6",
     category: "gifts",
-    name: 'Birthday Gifts for Women Spa Gift Box Basket for Wife Mom Sister Girlfriend Best Friend - Thank You Gifts Wine Cup Inspirational Gifts for Women Coworker Friends - Rose Golden',
+    name: "Birthday Gifts for Women Spa Gift Box Basket for Wife Mom Sister Girlfriend Best Friend - Thank You Gifts Wine Cup Inspirational Gifts for Women Coworker Friends - Rose Golden",
     seller: "ATOTO",
     wholePrice: "199",
     priceFraction: "90",
@@ -616,16 +584,14 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/81Tb7WGtSHS._AC_UL320_.jpg",
     url: "https://www.amazon.com/Birthday-Basket-Sister-Girlfriend-Friend/dp/B091C2BX2J/ref=sr_1_7?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-7",
-    features: [
-      
-    ],
+    features: [],
     price: 199.9,
     shipping: 9,
-},
-{
+  },
+  {
     key: "B01LPZD1P1",
     category: "gifts",
-    name: 'Birthday Gifts for Women Funny Gifts Baskets Wine Tumbler Gift Basket for Best FriendBFF Mom Daughter Girlfriend Sister Premuim and Unique Happy Birthday Chrismas Gifts Box for Her',
+    name: "Birthday Gifts for Women Funny Gifts Baskets Wine Tumbler Gift Basket for Best FriendBFF Mom Daughter Girlfriend Sister Premuim and Unique Happy Birthday Chrismas Gifts Box for Her",
     seller: "ATOTO",
     wholePrice: "155",
     priceFraction: "00",
@@ -634,17 +600,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/91y43e44NrL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Birthday-FriendBFF-Daughter-Girlfriend-Chrismas/dp/B08ZSHVSR3/ref=sr_1_10?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-10",
-    features: [
-      
-    ],
+    features: [],
     price: 155.0,
     shipping: 10,
-},
+  },
 
-{
+  {
     key: "B01LPZD1E9",
     category: "gifts",
-    name: 'Birthday Gift Basket for Men, Women Happy Birthday Gifts for Mom and Dad Friends Birthday Gift for Best Friend Happy Birthday Care Package for College Students for All Ages Fantastic for Party',
+    name: "Birthday Gift Basket for Men, Women Happy Birthday Gifts for Mom and Dad Friends Birthday Gift for Best Friend Happy Birthday Care Package for College Students for All Ages Fantastic for Party",
     seller: "ATOTO",
     wholePrice: "125",
     priceFraction: "00",
@@ -653,17 +617,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/91P4gub8A0L._AC_UL320_.jpg",
     url: "https://www.amazon.com/Birthday-Friends-Package-Students-Fantastic/dp/B08WN7PWZ5/ref=sr_1_18?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-18",
-    features: [
-      
-    ],
+    features: [],
     price: 125.0,
     shipping: 5,
-},
+  },
 
-{
+  {
     key: "B01LPZD1V3",
     category: "gifts",
-    name: 'Sister Gifts from Sister - Birthday Gifts for Sister',
+    name: "Sister Gifts from Sister - Birthday Gifts for Sister",
     seller: "ATOTO",
     wholePrice: "124",
     priceFraction: "55",
@@ -672,18 +634,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/91+qaActKJL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Sister-Gifts-Birthday-Relaxing-Tumbler/dp/B08XY9YTBB/ref=sr_1_17?dchild=1&keywords=birthday+gift&qid=1624031313&sr=8-17",
-    features: [
-      
-    ],
+    features: [],
     price: 124.55,
     shipping: 0,
-},
+  },
 
-
-{
+  {
     key: "B01LPZD1S0",
     category: "gifts",
-    name: 'Amazon.com Gift Card in a Premium Gift Box',
+    name: "Amazon.com Gift Card in a Premium Gift Box",
     seller: "ATOTO",
     wholePrice: "99",
     priceFraction: "90",
@@ -692,17 +651,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/914QlGL3AnL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Amazon-com-Gift-Card-Premium-Gold/dp/B06ZYZ1TKK/ref=sr_1_4?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-4",
-    features: [
-      
-    ],
-    price: 99.90,
+    features: [],
+    price: 99.9,
     shipping: 5,
-},
+  },
 
-{
+  {
     key: "B01LPZD1D5",
     category: "gifts",
-    name: 'Happy Anniversary Couples Game to Start Awesome Conversations 100+ Cards Gifts for Husband and Wife Him and Her',
+    name: "Happy Anniversary Couples Game to Start Awesome Conversations 100+ Cards Gifts for Husband and Wife Him and Her",
     seller: "ATOTO",
     wholePrice: "129",
     priceFraction: "55",
@@ -711,17 +668,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/71UwK-ltiKL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Anniversary-Couples-Awesome-Conversations-Husband/dp/B08NK5XYJ1/ref=sr_1_5?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-5",
-    features: [
-      
-    ],
+    features: [],
     price: 129.55,
     shipping: 0,
-},
+  },
 
-{
+  {
     key: "B01LPZD1A3",
     category: "gifts",
-    name: 'Knock Knock What I Love about You Fill in the Love Book Fill-in-the-Blank Gift Journal, 4.5 x 3.25-Inches',
+    name: "Knock Knock What I Love about You Fill in the Love Book Fill-in-the-Blank Gift Journal, 4.5 x 3.25-Inches",
     seller: "ATOTO",
     wholePrice: "99",
     priceFraction: "55",
@@ -730,17 +685,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/81kbmVHUxpL._AC_UL320_.jpg",
     url: "https://www.amazon.com/Knock-What-Love-About-Journal/dp/1601064934/ref=sr_1_6?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-6",
-    features: [
-      
-    ],
+    features: [],
     price: 99.55,
     shipping: 5,
-},
+  },
 
-{
+  {
     key: "B01LPZD1X4",
     category: "gifts",
-    name: 'Romantic Couple Figurines in Love , 9Inch Hand Painted Sweet Loving Together Couple Sculpture to Remember Beautiful Moment - Best Gift for Valentine day',
+    name: "Romantic Couple Figurines in Love , 9Inch Hand Painted Sweet Loving Together Couple Sculpture to Remember Beautiful Moment - Best Gift for Valentine day",
     seller: "ATOTO",
     wholePrice: "130",
     priceFraction: "00",
@@ -749,17 +702,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/51Qs8ma+UuL._AC_UL320_.jpg",
     url: "https://www.amazon.com/jinhuoba-Romantic-Figurines-Sculpture-Beautiful/dp/B07Q4RYQCJ/ref=sr_1_8?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-8",
-    features: [
-      
-    ],
-    price: 130.00,
+    features: [],
+    price: 130.0,
     shipping: 0,
-},
+  },
 
-{
+  {
     key: "B01LPZD1Q3",
     category: "gifts",
-    name: 'Preserved Red Real Rose with I Love You Necklace in 100 Languages -Enchanted Rose Flower Gifts for Mom Wife Girlfriend Her on Mothers Day Valentines Day Anniversary Christmas Birthday Gifts for Women',
+    name: "Preserved Red Real Rose with I Love You Necklace in 100 Languages -Enchanted Rose Flower Gifts for Mom Wife Girlfriend Her on Mothers Day Valentines Day Anniversary Christmas Birthday Gifts for Women",
     seller: "ATOTO",
     wholePrice: "199",
     priceFraction: "00",
@@ -768,17 +719,15 @@ var androids = [
     starCount: 4029,
     img: "https://m.media-amazon.com/images/I/71XisScUG3S._AC_UL320_.jpg",
     url: "https://www.amazon.com/Preserved-Enchanted-Girlfriend-Valentines-Anniversary/dp/B08T727CZ6/ref=sr_1_12?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-12",
-    features: [
-      
-    ],
-    price: 199.00,
+    features: [],
+    price: 199.0,
     shipping: 0,
-},
+  },
 
-{
+  {
     key: "B01LPZD1R5",
     category: "gifts",
-    name: 'Shoulder Bag',
+    name: "Shoulder Bag",
     seller: "ATOTO",
     wholePrice: "124",
     priceFraction: "55",
@@ -787,13 +736,10 @@ var androids = [
     starCount: 4029,
     img: "https://static.yoursurprise.com/articleimage/groepboxen/ca6967c3c5016644abdcde09096bf942/shoulder-bag_small.jpg?width=263&crop=1%3A1&fbclid=IwAR2yl8XUcQlqdTx2y7zdtC8zI2z5_xmNt8gTVwM8wJbEnq6HwHGC7onvjKQ",
     url: "https://www.amazon.com/Wedding-Anniversary-Gift-Unconditional-Rosie/dp/B01CIAJSPC/ref=sr_1_24?dchild=1&keywords=anniversary+gift&qid=1624032136&sr=8-24",
-    features: [
-      
-    ],
+    features: [],
     price: 124.55,
     shipping: 0,
-},
-  
+  },
 ];
 
 export default androids;

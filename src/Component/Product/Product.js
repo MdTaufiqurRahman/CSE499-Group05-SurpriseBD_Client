@@ -8,22 +8,32 @@ import { Button } from "react-bootstrap";
 const Product = (props) => {
   const { img, name, seller, price, stock, key } = props.product;
   return (
-    <div className="product">
+    <div className="product container">
       <div>
-        <img style={{border:'5px', width:'200px', height:'200px'}} src={img} alt=""></img>
+        <img
+          style={{ border: "5px", width: "200px", height: "200px" }}
+          src={img}
+          alt=""
+        ></img>
       </div>
 
       <div className="ml-5">
         <h5 className="product-name">
-          <Link style={{fontFamily:'sans-serif'}} className="link" to={"/product/" + key}>{name}</Link>
+          <Link
+            style={{ fontFamily: "sans-serif" }}
+            className="link"
+            to={"/product/" + key}
+          >
+            {name}
+          </Link>
         </h5>
         <br />
 
-        <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>
-          By : {seller}
+        <p style={{ fontFamily: "sans-serif", fontStyle: "italic" }}>
+          Seller Name : {seller}
         </p>
 
-        <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>
+        <p style={{ fontFamily: "sans-serif", fontStyle: "italic" }}>
           Only {stock} left in stock - Order soon
         </p>
 
@@ -34,7 +44,7 @@ const Product = (props) => {
             onClick={() => props.handleAddProduct(props.product)}
           >
             <FontAwesomeIcon icon={faShoppingCart} />
-             Add to cart
+            Add to cart
           </Button>
         )}
       </div>
