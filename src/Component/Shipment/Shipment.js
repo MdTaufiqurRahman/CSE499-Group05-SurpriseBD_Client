@@ -64,7 +64,7 @@ const Shipment = () => {
             <span className="error">This field is required</span>
           )}
 
-          <input type="submit" />
+          <input className="btn btn-primary" type="submit" />
         </form>
       </div>
       <div className="ship-img">
