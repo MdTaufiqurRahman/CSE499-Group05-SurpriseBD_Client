@@ -19,5 +19,6 @@
 }
 
 .top{
+    margin-top: 10px;
     border-top: 1px dashed rgb(156, 169, 190);
 }
