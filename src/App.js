@@ -17,48 +17,48 @@ import Shipment from "./Component/Shipment/Shipment";
 export const UserContext = createContext();
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({})
+  const [loggedInUser, setLoggedInUser] = useState({});
 
   return (
     <div className="bg">
-       <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/about">
-            <AboutUs></AboutUs>
-          </Route>
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
-          <Route path="/review">
-            <Review></Review>
-          </Route>
-          <Route path="/customized">
-            <CustomizeOrder></CustomizeOrder>
-          </Route>
-          <PrivateRoute path="/shipment">
-            <Shipment></Shipment>
-          </PrivateRoute>
-          <Route path="/product/:productKey">
-            <ProductDetail></ProductDetail>
-          </Route>
-          <Route>
-            <Shop path="/shop"></Shop>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
-    </UserContext.Provider>
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/about">
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/review">
+              <Review></Review>
+            </Route>
+            <Route path="/customized">
+              <CustomizeOrder></CustomizeOrder>
+            </Route>
+            <PrivateRoute path="/shipment">
+              <Shipment></Shipment>
+            </PrivateRoute>
+            <Route path="/product/:productKey">
+              <ProductDetail></ProductDetail>
+            </Route>
+            <Route>
+              <Shop path="/shop"></Shop>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </UserContext.Provider>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Teko:wght@300&display=swap");
+.about-us {
+  background-image: url("https://image.freepik.com/free-vector/paper-style-white-monochrome-background_52683-65314.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding-bottom: 200px;
+  padding-top: 50px;
+  font-family: "Hind Madurai", sans-serif;
+  text-size-adjust: 20px;
+  letter-spacing: 2px;
+  line-height: 2.5;
+  color: "maroon";
+  padding: "10px";
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 20px #333e4f;
+  border-left: 10px solid;
+  border-image: linear-gradient(orange, blue, green);
+  border-image-slice: 1;
+}
+.about-us p {
+  font-weight: bolder;
+  font-size: larger;
+  text-align: justify;
+  color: #333e4f;
+}

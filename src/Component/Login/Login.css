@@ -1,22 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .login-form {
-    border: 1px solid gainsboro;
-    margin: 10px 120px;
-    padding: 40px 20px;
-    border-radius: 10px;
-    background-color: rgb(51, 62, 79);
-    height:60%;
+  border: 1px solid gainsboro;
+  margin: 10px 120px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background-color: rgb(51, 62, 79);
+  height: 60%;
 }
 
-.login-form  Button img{
-    width: 20px;
-    margin-right: 20px;
+.login-form Button img {
+  width: 20px;
+  margin-right: 20px;
 }
-.checkbox{
-    zoom: 1.5;
-    vertical-align: middle;
-    position: relative;
+.checkbox {
+  zoom: 1.5;
+  vertical-align: middle;
+  position: relative;
 }
 
-
-
-
+.login-page {
+  text-align: center;
+  border-bottom: none;
+  padding-bottom: 5px;
+  background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}

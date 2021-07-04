@@ -1,9 +1,9 @@
-.header{
-    width: 100%;
-    position:sticky;
-    background-color: rgb(51, 62, 79);
-    top: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    z-index: 999;
-    font-size: 18px;
+@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+.header {
+  width: 100%;
+  position: sticky;
+  background-color: rgb(51, 62, 79);
+  font-family: "Sarabun", sans-serif;
+  z-index: 999;
+  font-size: 18px;
 }

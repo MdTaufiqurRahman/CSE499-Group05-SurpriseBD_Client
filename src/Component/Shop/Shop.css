@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .twin-container {
   display: flex;
+  background-color: #f1f2f6;
+  /* background-image: url("https://image.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-325.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: px;
 }
 .product-container {
   width: 70%;
