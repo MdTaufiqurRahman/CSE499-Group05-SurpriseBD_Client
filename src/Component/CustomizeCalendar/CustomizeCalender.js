@@ -8,7 +8,7 @@ const CustomizeCalender = ({handleDateChange}) => {
     return (
       
         <div>
-        <main style={{ height: "600px"}} className="d-flex justify-content-center">
+        <main style={{ height: "400px"}} className="d-flex justify-content-center">
         <div className="col-md-5 offset-md-2 mt-3">
           <Calendar onChange={handleDateChange} value={new Date()} />
         </div>

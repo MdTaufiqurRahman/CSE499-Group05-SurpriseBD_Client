@@ -20,7 +20,7 @@ const Header = () => {
             Home
           </Nav.Link>
           <Nav.Link style={{ color: "white" }} href="/customized">
-            Customized Order
+            Booking
           </Nav.Link>
           <Nav.Link style={{ color: "white" }} href="/about">
             About Us

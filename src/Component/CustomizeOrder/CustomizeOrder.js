@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import CustomClock from "../CustomClock/CustomClock";
-import CustomizeCalender from "../CustomizeCalendar/CustomizeCalender";
+import Appointment from '../Appointment/Appointment';
 
 const CustomizeOrder = () => {
   const {
@@ -18,17 +17,10 @@ const CustomizeOrder = () => {
   return (
     
     <div className="pb-5 bg-light" >
-      <h1 className="text-center text-black font-weight-bold p-3">Customize Your Order</h1>
-
-      <div className="row-1 d-flex justify-content-center">
-        <div className="col-8">
-          <CustomizeCalender></CustomizeCalender>
-        </div>
-        <div className="col-4">
-          <CustomClock></CustomClock>
-        </div>
-      </div>
       
+          <Appointment></Appointment>
+
+     <h1 className="text-center text-black font-weight-bold p-3">Customize Your Order</h1>
       <form style={{borderRadius:'10px'}}
         className="container bg-dark pt-4 pb-3 border border-dark"
         onSubmit={handleSubmit(onSubmit)}
@@ -84,7 +76,7 @@ const CustomizeOrder = () => {
         </div>
 
         <div className="form-group row">
-          <div className="col-4">
+          <div className="col-6">
             <select
               className="form-control"
               name="giftType"
@@ -105,7 +97,7 @@ const CustomizeOrder = () => {
             )}
           </div>
 
-          <div className="col-4">
+          <div className="col-6">
             <input
               {...register("Quantity", { required: true })}
               className="form-control"
@@ -117,20 +109,7 @@ const CustomizeOrder = () => {
               <span className="text-danger">This field is required</span>
             )}
           </div>
-          <div className="col-4">
-            <select
-              className="form-control"
-              name="Venue"
-              {...register("Venue", { required: false })}
-            >
-              <option disabled={false} value="Not set">
-                Select Venue Type If Needed
-              </option>
-              <option value="Restaurant">Restaurant</option>
-              <option value="Resort">Resort</option>
-              <option value="Not set">Other</option>
-            </select>
-          </div>
+    
         </div>
 
         <div className="form-group text-right">

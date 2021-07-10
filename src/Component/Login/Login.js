@@ -108,7 +108,7 @@ function Login() {
         <label
           htmlFor="newUser"
           className=" btn btn-primary text-bg font-weight-bold m-3 p-3"
-          style={{ width: "77%" }}
+          style={{ width: "78%" }}
         >
           Please check the box for sign up
           <input
