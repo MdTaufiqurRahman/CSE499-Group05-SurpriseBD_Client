@@ -14,7 +14,7 @@ const BookingCard = ({booking, date}) => {
           <div className="col-md-4 mb-5">
               <div className="card p-3">
                   <div className="card-body text-center">
-                      <h5 className="card-title text-primary">{booking.subject}</h5>
+                      <h5 className="card-title">{booking.subject}</h5>
                       <img style={{width: '100%', height:'200px'}} src={booking.image} alt="" />
                       <h6>{booking.HelpingHour}</h6>
                       <p>{booking.totalSpace} SEATS AVAILABLE</p>

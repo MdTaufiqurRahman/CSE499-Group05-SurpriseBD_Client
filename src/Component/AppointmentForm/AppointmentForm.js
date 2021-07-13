@@ -9,7 +9,9 @@ const customStyles = {
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
+        transform: 'translate(-50%, -50%)',
+        backgroundColor:'rgb(51, 62, 79)',
+        width: '40%',
     }
 };
 
@@ -35,8 +37,8 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                 style={customStyles}
                 contentLabel="Example Modal"
             >
-                <h2 className="text-center text-primary">{appointmentOn}</h2>
-                <p className="text-secondary text-center"><small>ON {date.toDateString()}</small></p>
+                <h2 style={{color:'white'}} className="text-center ">{appointmentOn}</h2>
+                <p className="text-white text-center">ON {date.toDateString()}</p>
 
                 <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
                 
@@ -53,6 +55,16 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                     <div className="form-group mt-3">
                     <input type="text" {...register("email", { required: true })} name="email" placeholder="Email" className="form-control"/>
                     {errors.email && <span>This field is required</span>}
+                    </div>
+
+                    <div className="form-group mt-3">
+                    <input type="text" {...register("address", { required: true })} name="address" placeholder="Address" className="form-control"/>
+                    {errors.address && <span>This field is required</span>}
+                    </div>
+
+                    <div className="form-group mt-3">
+                    <input type="text" {...register("details", { required: true })} name="details" placeholder="Order Details" className="form-control"/>
+                    {errors.details && <span>This field is required</span>}
                     </div>
 
                     <div className="form-group text- mt-3">

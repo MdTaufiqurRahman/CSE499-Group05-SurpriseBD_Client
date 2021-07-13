@@ -3,6 +3,30 @@ import BookingCard from '../BookingCard/BookingCard';
 
 const bookingData = [
     {
+        _id: '5e8df6a0e6e8231764dc23e31',
+        id: 10,
+        subject: 'For Customized Clock',
+        image: 'https://res.giftalove.com/resources/common/giftimages/productimage1/CWPFM202.jpg',
+        HelpingHour: '10:00 AM - 10:00 PM',
+        totalSpace: 25
+    },
+    {
+        _id: '5e8df6a0e6e8231764dc23e33',
+        id: 11,
+        subject: 'For Customized Bag',
+        image: 'https://i.etsystatic.com/11249239/d/il/ee9306/2419275299/il_340x270.2419275299_873x.jpg?version=0',
+        HelpingHour: '10:00 AM - 10:00 PM',
+        totalSpace: 12
+    },
+    {
+        _id: '5e8df6a0e6e8231764dc23e34',
+        id: 12,
+        subject: 'Customized What You Want',
+        image: 'https://3.imimg.com/data3/ML/WL/MY-18247332/mug-printing-500x500.png',
+        HelpingHour: '10:00 AM - 10:00 PM',
+        totalSpace: 10
+    },
+    {
         _id: '5e8df50be6e8231764dc23de',
         id: 1,
         subject: 'Hilton Moorea Lagoon Resort',
@@ -43,7 +67,7 @@ const bookingData = [
         totalSpace: 600
     },
     {
-        _id: '5e8df68de6e8231764dc23e2',
+        _id: '5e8df68de6e8231764dc23e4',
         id: 6,
         subject: 'The Ocean Retreat',
         image: 'https://media.cntraveler.com/photos/608f49f8fff15401f8abdded/master/w_1600%2Cc_limit/monkey-hut-2-horz.jpg',
@@ -51,7 +75,7 @@ const bookingData = [
         totalSpace: 475
     },
     {
-        _id: '5e8df68de6e8231764dc23e2',
+        _id: '5e8df68de6e8231764dc23e5',
         id: 7,
         subject: 'Londolozi Retreat',
         image: 'https://media-cdn.tripadvisor.com/media/daodao/photo-s/02/f0/20/c9/caption.jpg',
@@ -59,7 +83,7 @@ const bookingData = [
         totalSpace: 420
     },
     {
-        _id: '5e8df68de6e8231764dc23e2',
+        _id: '5e8df68de6e8231764dc23e7',
         id: 8,
         subject: 'Taj Exotica Resort',
         image: 'https://media.cntraveler.com/photos/5f6821be7557491753645016/master/w_2048,h_1365,c_limit/mandapa-bali.jpg',
@@ -67,7 +91,7 @@ const bookingData = [
         totalSpace: 375
     },
     {
-        _id: '5e8df6a0e6e8231764dc23e3',
+        _id: '5e8df6a0e6e8231764dc23e9',
         id: 9,
         subject: 'Grand Metropark Resort ',
         image: 'https://data.theupsider.com.au/wp-content/uploads/2018/08/Aerial_view_of_One-bedroom_Pool_Villa_5464-A4.jpg',
@@ -80,7 +104,7 @@ const bookingData = [
 const BookAppointment = ({date}) => {
     return (
         <div className="container">
-            <h2 className="text-center text-primary mb-5">Available Resorts on {date.toDateString()}</h2>
+            <h2 className="text-center mb-5">Customize Order and Resort Booking on {date.toDateString()}</h2>
             <div className="row">
                 {
                     bookingData.map((booking=> <BookingCard booking={booking} date={date} key={booking.key}></BookingCard> ))
