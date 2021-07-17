@@ -13,7 +13,6 @@ const Categories = () => {
         className="row align-items-center md-4"
         style={{
           rowGap: "40px",
-          marginLeft: "5px",
           marginTop: "40px",
           textAlign: "center",
           marginBottom: "40px",

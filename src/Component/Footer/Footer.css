@@ -1,24 +1,25 @@
-.footer-area{
-    background-image: url(../../images/footer-bg.png);
-    background-size: cover;
-    background-color: rgb(51, 62, 79);
-    color: rgb(156, 169, 190);
-    font-family: 'Josefin Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+.footer-area {
+  background-image: url(../../images/footer-bg.png);
+  background-size: cover;
+  background-color: rgb(51, 62, 79);
+  color: rgb(156, 169, 190);
+  font-family: "Sarabun", sans-serif;
 }
-.social-media .icon{
-    height: 40px;
-    width: 40px;
-    color:white;
-    border-radius: 10px;
-    border: 1px solid white;
-    padding: 10px;
+.social-media .icon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 10px;
 }
-.social-media .active-icon{
-    background-color:rgb(94, 82, 202) ;
-    color:white;
+.social-media .active-icon {
+  background-color: rgb(94, 82, 202);
+  color: white;
 }
 
-.top{
-    margin-top: 10px;
-    border-top: 1px dashed rgb(156, 169, 190);
+.top {
+  margin-top: 10px;
+  border-top: 1px dashed rgb(156, 169, 190);
 }
