@@ -11,24 +11,25 @@ import {
 const Footer = () => {
   return (
     <MDBFooter className="font-small pt-4 footer-area">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="5">
+      <MDBContainer fluid className="text-center">
+        <MDBRow className="container-fluid row">
+          <MDBCol className="col-6 px-5">
             <h5 className="title text-rgb(156, 169, 190)">About Us</h5>
             <p style={{ textAlign: "justify" }}>
               People willing to give surprises for their special ones can
               contact us and we can arrange surprises and gifts for their
               special ones. We can arrange gifts and surprises at the exact time
-              our customer want. It can be at 12 am sharp. Customers can share
-              their thoughts or ideas for a surprise with us and we can help
-              them arrange surprises. We will take responsibility for arranging
-              the party on behalf of our customer(Pay and go service). People
-              can use our web app to send gifts to their close ones from one
-              city to another.
+              our customer want. Customers can share their thoughts or ideas for
+              a surprise with us and we can help them arrange surprises. We will
+              take responsibility for arranging the party on behalf of our
+              customer. People can use our web app to send gifts to their close
+              ones from one city to another. There are several other ways to
+              express your love besides birthdays and anniversaries. People can
+              easily arrange any kind of gift for their loved ones using our web
+              application.
             </p>
-            <i class="fab fa-facebook-square"></i>
           </MDBCol>
-          <MDBCol md="2">
+          <MDBCol class="col-2 gr-10">
             <h5 className="title text-rgb(156, 169, 190)">Services</h5>
             <p>Emergency Special Care</p>
             <p>For Gift Selection Item</p>
@@ -36,7 +37,7 @@ const Footer = () => {
             <p>Save your Special Date</p>
             <p>Venue Selection Item</p>
           </MDBCol>
-          <MDBCol md="2">
+          <MDBCol className="col-2">
             <h5 className="title text-rgb(156, 169, 190)">Gift Item</h5>
             <p>Birthday Gift Item</p>
             <p>Anniversary Gift Item</p>
@@ -44,7 +45,7 @@ const Footer = () => {
             <p>Grandparents Gift Item</p>
             <p>Children Gift Item</p>
           </MDBCol>
-          <MDBCol md="3">
+          <MDBCol className="col-2">
             <h5 className="title text-rgb(156, 169, 190)">Contact</h5>
             <p>
               {" "}
@@ -54,10 +55,7 @@ const Footer = () => {
             <ul className="social-media list-inline">
               <li className="list-inline-item">
                 <a href="https://www.facebook.com/taufiqur.anik/">
-                  <FontAwesomeIcon
-                    className="icon active-icon"
-                    icon={faFacebookF}
-                  />
+                  <FontAwesomeIcon className="icon" icon={faFacebookF} />
                 </a>
               </li>
               <li className="list-inline-item">

@@ -200,9 +200,10 @@ const Categories = () => {
         </div>
       </div>
 
-      <img style={{ width: "99%", marginLeft: "15px" }} src={rate} alt="" />
-
-      <img style={{ width: "99%", marginLeft: "15px" }} src={rate2} alt="" />
+      <div className="row">
+        <img className="container col-12" src={rate} alt="" />
+        <img className="container col-12" src={rate2} alt="" />
+      </div>
     </div>
   );
 };
