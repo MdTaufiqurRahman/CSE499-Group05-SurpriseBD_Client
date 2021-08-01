@@ -13,6 +13,7 @@ import ProductDetail from "./Component/ProductDetail/ProductDetail";
 import Review from "./Component/Review/Review";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 import Shipment from "./Component/Shipment/Shipment";
+import AdminPanel from "./Component/AdminPanel/AdminPanel";
 
 export const UserContext = createContext();
 
@@ -25,6 +26,9 @@ function App() {
         <Router>
           <Header></Header>
           <Switch>
+            <Route path="/admin">
+              <AdminPanel></AdminPanel>
+            </Route>
             <Route path="/home">
               <Home></Home>
             </Route>
