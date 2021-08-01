@@ -30,7 +30,7 @@ const Review = () => {
     const savedCart = getDatabaseCart();
     const productKeys = Object.keys(savedCart);
 
-    fetch("http://localhost:5000/productsByKeys", {
+    fetch("https://pacific-wildwood-12473.herokuapp.com/productsByKeys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,16 +41,16 @@ const Review = () => {
       .then((data) => setCart(data));
   }, []);
 
-  let thankYou;
-  if (orderPlaced) {
-    thankYou = (
-      <img
-        style={{ margin: "20px", borderRadius: "10px" }}
-        src="https://cdn.dribbble.com/users/1162379/screenshots/6822916/gift.gif?fbclid=IwAR04kspOJ_KFxKuPoA7qiYBaWIPRheCRgUgFN3Yy6DQmnKE9hx0JQaDCFxE"
-        alt=""
-      ></img>
-    );
-  }
+  // let thankYou;
+  // if (orderPlaced) {
+  //   thankYou = (
+  //     <img
+  //       style={{ margin: "20px", borderRadius: "10px" }}
+  //       src="https://cdn.dribbble.com/users/1162379/screenshots/6822916/gift.gif?fbclid=IwAR04kspOJ_KFxKuPoA7qiYBaWIPRheCRgUgFN3Yy6DQmnKE9hx0JQaDCFxE"
+  //       alt=""
+  //     ></img>
+  //   );
+  // }
 
   return (
     <div className="twin-container">
@@ -62,7 +62,7 @@ const Review = () => {
             product={pd}
           ></ReviewItem>
         ))}
-        {thankYou}
+        {/* {thankYou} */}
       </div>
       <div className="cart-container">
         <Cart cart={cart}>

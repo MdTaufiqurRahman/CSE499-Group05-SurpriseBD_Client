@@ -4,7 +4,7 @@ import fakeData from "../../fakeData";
 const AdminPanel = () => {
   const handleAddProduct = () => {
     const product = {};
-    fetch("http://localhost:5000/addProduct", {
+    fetch("https://pacific-wildwood-12473.herokuapp.com/addProduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

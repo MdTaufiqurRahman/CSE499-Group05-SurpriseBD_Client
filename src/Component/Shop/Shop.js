@@ -15,7 +15,7 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://pacific-wildwood-12473.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -23,7 +23,7 @@ const Shop = () => {
   useEffect(() => {
     const savedCart = getDatabaseCart();
     const productKeys = Object.keys(savedCart);
-    fetch("http://localhost:5000/productsByKeys", {
+    fetch("https://pacific-wildwood-12473.herokuapp.com/productsByKeys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -51,6 +51,15 @@ const Shop = () => {
     setCart(newCart);
     addToDatabaseCart(product.key, count);
   };
+
+  // shuffle products
+  const shuffle = (a) => {
+    for (let i = a.length; i; i--) {
+      let j = Math.floor(Math.random() * i);
+      [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+  };
+  shuffle(products);
 
   return (
     <div className="twin-container">
