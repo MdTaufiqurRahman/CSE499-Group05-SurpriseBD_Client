@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { UserContext } from "../../App";
 import "./Shipment.css";
 import { getDatabaseCart, processOrder } from "../../utilities/databaseManager";
+import { useHistory } from "react-router";
 
 const Shipment = () => {
   const {
@@ -11,6 +12,9 @@ const Shipment = () => {
     watch,
     formState: { errors },
   } = useForm();
+
+  const history = useHistory();
+
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const onSubmit = (data) => {
     const savedCart = getDatabaseCart();
@@ -33,6 +37,7 @@ const Shipment = () => {
         if (data) {
           processOrder();
           alert("your order placed successfully");
+          history.push("/home");
         }
       });
   };

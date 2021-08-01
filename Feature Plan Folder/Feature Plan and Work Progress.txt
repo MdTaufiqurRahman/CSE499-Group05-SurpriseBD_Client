@@ -1,0 +1,27 @@
+-------------------Features--------------
+
+Working In Progress:
+1. Payment system.
+2. Customize page.
+
+Work To Be Done:
+1. Customized Page database connection
+2. Admin page 
+3. Payment page
+4. UI improvement
+
+Done:
+1.  Home Page
+2.  Product page
+3.  Custimize page user interface
+4.  Delivery Page
+5.  Server connection with product database
+6.  User order page connection with server
+7.  Sign up
+8.  Login
+9.  Forget passowrd system integrated with mail
+10. Login or signup with google added
+11. Review order page
+12. React routing added
+13. Heroku server deployment
+14. Intigrated with MongoDB database.

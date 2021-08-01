@@ -9,7 +9,7 @@ const Cart = (props) => {
   for (let i = 0; i < cart.length; i++) {
     const product = cart[i];
     console.log(product.price, product.quantity);
-    total = total + product.price * product.quantity || 10;
+    total = total + product.price * product.quantity || 1;
   }
 
   let shipping = 0;

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import fakeData from "../../fakeData";
 import {
   getDatabaseCart,
-  processOrder,
   removeFromDatabaseCart,
 } from "../../utilities/databaseManager";
 import { Button } from "react-bootstrap";
@@ -12,7 +11,6 @@ import { useHistory } from "react-router";
 
 const Review = () => {
   const [cart, setCart] = useState([]);
-  const [orderPlaced, setOrderPlaced] = useState(false);
   const history = useHistory();
 
   const handleProceedCheckout = () => {
@@ -41,17 +39,6 @@ const Review = () => {
       .then((data) => setCart(data));
   }, []);
 
-  // let thankYou;
-  // if (orderPlaced) {
-  //   thankYou = (
-  //     <img
-  //       style={{ margin: "20px", borderRadius: "10px" }}
-  //       src="https://cdn.dribbble.com/users/1162379/screenshots/6822916/gift.gif?fbclid=IwAR04kspOJ_KFxKuPoA7qiYBaWIPRheCRgUgFN3Yy6DQmnKE9hx0JQaDCFxE"
-  //       alt=""
-  //     ></img>
-  //   );
-  // }
-
   return (
     <div className="twin-container">
       <div className="product-container">
@@ -62,7 +49,6 @@ const Review = () => {
             product={pd}
           ></ReviewItem>
         ))}
-        {/* {thankYou} */}
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
