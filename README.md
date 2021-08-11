@@ -5,9 +5,13 @@ People willing to give surprises for their special ones can contact us and we ca
 
 # Features Working Progress
 
+Work Done This Week(12/08/21):
+1. Slide work done for presentation
+2. Review Work Done
+
 Working In Progress:
-1. Payment system.
-2. Customize page.
+1. Payment system
+2. Customize page
 
 Work To Be Done:
 1. Customized Page database connection
