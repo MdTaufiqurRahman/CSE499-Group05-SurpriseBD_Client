@@ -19,8 +19,12 @@ const ReviewItem = (props) => {
         ></img>
       </div>
 
-      <h4 className="product-name" style={{fontFamily:'sans-serif'}}>{name}</h4>
-      <p style={{fontFamily:'sans-serif', fontStyle:'italic'}}>Quantity: {quantity}</p>
+      <h4 className="product-name" style={{ fontFamily: "sans-serif" }}>
+        {name}
+      </h4>
+      <p style={{ fontFamily: "sans-serif", fontStyle: "italic" }}>
+        Quantity: {quantity}
+      </p>
       <p>
         <h5>$ {price}</h5>
       </p>

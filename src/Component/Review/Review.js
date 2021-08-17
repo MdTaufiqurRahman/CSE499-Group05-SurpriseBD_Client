@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import fakeData from "../../fakeData";
 import {
   getDatabaseCart,
   removeFromDatabaseCart,

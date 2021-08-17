@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import fakeData from "../../fakeData";
 import {
   addToDatabaseCart,
   getDatabaseCart,
@@ -9,16 +8,30 @@ import { Button } from "react-bootstrap";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
+import { Spinner } from "react-bootstrap";
+
+
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [search, setSearch] = useState(" ");
+
+  
+  // shuffle products
+  // const shuffle = (a) => {
+  //   for (let i = a.length; i; i--) {
+  //     let j = Math.floor(Math.random() * i);
+  //     [a[i - 1], a[j]] = [a[j], a[i - 1]];
+  //   }
+  // };
+  // shuffle(products);
 
   useEffect(() => {
-    fetch("https://pacific-wildwood-12473.herokuapp.com/products")
+    fetch("https://pacific-wildwood-12473.herokuapp.com/products?search="+search)
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [search]);
 
   useEffect(() => {
     const savedCart = getDatabaseCart();
@@ -33,6 +46,10 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setCart(data));
   }, []);
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value);
+  };
 
   const handleAddProduct = (product) => {
     const toBeAddedKey = product.key;
@@ -52,18 +69,14 @@ const Shop = () => {
     addToDatabaseCart(product.key, count);
   };
 
-  // shuffle products
-  const shuffle = (a) => {
-    for (let i = a.length; i; i--) {
-      let j = Math.floor(Math.random() * i);
-      [a[i - 1], a[j]] = [a[j], a[i - 1]];
-    }
-  };
-  shuffle(products);
 
   return (
     <div className="twin-container">
       <div className="product-container">
+        <div className="container  w-100 pt-5"><input className="p-2 w-25" type="text" onKeyUp={handleSearch} placeholder="Search Products" /></div>
+
+        {products.length === 0 && <Spinner className="container d-flex justify-content-center" animation="border" />}
+
         {products.map((pd) => (
           <Product
             key={pd.key}

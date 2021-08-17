@@ -1,5 +1,4 @@
 import React from "react";
-import fakeData from "../../fakeData";
 
 const AdminPanel = () => {
   const handleAddProduct = () => {

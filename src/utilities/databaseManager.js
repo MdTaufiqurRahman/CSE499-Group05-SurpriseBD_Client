@@ -11,7 +11,7 @@ const getUser = () => {
 
 const getDataKey = () => {
   const userId = getUser();
-  return `surprisebd/carts/${userId}`;
+  return `emaJohn/carts/${userId}`;
 };
 
 // push to local storage: a temporary place for database
@@ -43,3 +43,39 @@ export {
   removeFromDatabaseCart,
   processOrder,
 };
+
+// polyfill to support older browser
+const localStorage =
+  window.localStorage ||
+  (() => {
+    let store = {};
+    return {
+      getItem(key) {
+        return store[key];
+      },
+      setItem(key, value) {
+        store[key] = value.toString();
+      },
+      clear() {
+        store = {};
+      },
+    };
+  })();
+
+const sessionStorage =
+  window.sessionStorage ||
+  (() => {
+    let store = {};
+    return {
+      getItem(key) {
+        return store[key];
+      },
+      setItem(key, value) {
+        store[key] = value.toString();
+      },
+      clear() {
+        store = {};
+      },
+    };
+  })();
+// end of poly fill
