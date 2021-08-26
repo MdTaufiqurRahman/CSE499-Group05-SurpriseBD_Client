@@ -17,11 +17,30 @@
   color: red;
 }
 
-.shipment {
-  display: flex;
-  background: #ffffff;
-}
-
 .form-container {
   width: 70%;
+}
+.shipment-submit-btn:hover,
+.pay-btn:hover {
+  color: white;
+  background-color: #5754fa;
+}
+.error {
+  margin-left: 0.5rem;
+  color: red;
+}
+.payment-div {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.pay-btn {
+  margin-top: 1rem;
+  background-color: #5754fa;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none !important;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }

@@ -1,16 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .twin-container {
   display: flex;
-  background-color: #f1f2f6;
-  /* background-image: url("https://image.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-325.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-  font-family: "Poppins", sans-serif;
-  letter-spacing: px;
 }
 .product-container {
   width: 70%;
   margin-left: 20px;
-  margin-right: 20px;
-  border-right: 2px solid lightgrey;
+  margin-right: 5px;
+  border-right: 1px solid #c2c0dd;
+}
+.product-container .input-div {
+  margin: 3rem auto 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+.product-container input {
+  border: 2px solid #c2c0dd;
+  outline: none;
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  max-width: 35rem;
+  width: 70%;
+}
+.product-container input:focus {
+  border: 2px solid #5b58ed;
+}
+.product-container input:active {
+  border: 2px solid #5b58ed;
 }

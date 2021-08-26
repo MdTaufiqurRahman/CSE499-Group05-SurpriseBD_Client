@@ -12,6 +12,15 @@
   font-family: "Bookman, serif";
   text-align: "justify";
 }
+.product-name a {
+  color: #090b2b;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+.product-name a:hover {
+  color: #0069d9;
+  text-shadow: #090b2b;
+}
 
 .main-button {
   background-color: goldenrod;

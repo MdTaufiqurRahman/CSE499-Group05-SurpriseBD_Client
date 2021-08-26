@@ -18,7 +18,7 @@ const Product = (props) => {
       </div>
 
       <div className="ml-5">
-        <h5 className="product-name">
+        <h4 className="product-name">
           <Link
             style={{ fontFamily: "sans-serif" }}
             className="link"
@@ -26,7 +26,7 @@ const Product = (props) => {
           >
             {name}
           </Link>
-        </h5>
+        </h4>
         <br />
 
         <p style={{ fontFamily: "sans-serif", fontStyle: "italic" }}>

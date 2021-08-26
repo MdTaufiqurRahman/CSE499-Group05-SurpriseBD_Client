@@ -35,7 +35,15 @@ const Review = () => {
       body: JSON.stringify(productKeys),
     })
       .then((res) => res.json())
-      .then((data) => setCart(data));
+      .then((data) => {
+        const cartProducts = productKeys.map((key) => {
+          const product = data.find((product) => product.key === key);
+          product.quantity = savedCart[key];
+          return product;
+        });
+        // console.log("cartProducts", cartProducts);
+        setCart(cartProducts);
+      });
   }, []);
 
   return (

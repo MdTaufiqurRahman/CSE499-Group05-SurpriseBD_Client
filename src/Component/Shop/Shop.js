@@ -10,14 +10,11 @@ import Product from "../Product/Product";
 import "./Shop.css";
 import { Spinner } from "react-bootstrap";
 
-
-
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [search, setSearch] = useState(" ");
 
-  
   // shuffle products
   // const shuffle = (a) => {
   //   for (let i = a.length; i; i--) {
@@ -28,7 +25,9 @@ const Shop = () => {
   // shuffle(products);
 
   useEffect(() => {
-    fetch("https://pacific-wildwood-12473.herokuapp.com/products?search="+search)
+    fetch(
+      "https://pacific-wildwood-12473.herokuapp.com/products?search=" + search
+    )
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [search]);
@@ -44,7 +43,15 @@ const Shop = () => {
       body: JSON.stringify(productKeys),
     })
       .then((res) => res.json())
-      .then((data) => setCart(data));
+      .then((data) => {
+        const cartProducts = productKeys.map((key) => {
+          const product = data.find((product) => product.key === key);
+          product.quantity = savedCart[key];
+          return product;
+        });
+        // console.log("cartProducts", cartProducts);
+        setCart(cartProducts);
+      });
   }, []);
 
   const handleSearch = (event) => {
@@ -65,17 +72,29 @@ const Shop = () => {
       product.quantity = 1;
       newCart = [...cart, product];
     }
+    console.log(newCart);
     setCart(newCart);
     addToDatabaseCart(product.key, count);
   };
 
-
   return (
     <div className="twin-container">
       <div className="product-container">
-        <div className="container  w-100 pt-5"><input className="p-2 w-25" type="text" onKeyUp={handleSearch} placeholder="Search Products" /></div>
+        <div className="container  w-100 pt-5">
+          <input
+            className="form-control w-50"
+            type="text"
+            onKeyUp={handleSearch}
+            placeholder="Search Products"
+          />
+        </div>
 
-        {products.length === 0 && <Spinner className="container d-flex justify-content-center" animation="border" />}
+        {products.length === 0 && (
+          <Spinner
+            className="container d-flex justify-content-center"
+            animation="border"
+          />
+        )}
 
         {products.map((pd) => (
           <Product

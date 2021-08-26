@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../App";
 import "./Shipment.css";
 import { getDatabaseCart, processOrder } from "../../utilities/databaseManager";
 import { useHistory } from "react-router";
+import ProcessPayment from "../ProcessPayment/ProcessPayment";
 
 const Shipment = () => {
   const {
@@ -16,12 +17,18 @@ const Shipment = () => {
   const history = useHistory();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [shippingData, setShippingData] = useState(null);
+
   const onSubmit = (data) => {
+    setShippingData(data);
+  };
+  const handlePaymentSuccess = (paymentId) => {
     const savedCart = getDatabaseCart();
     const orderDetails = {
       ...loggedInUser,
       products: savedCart,
-      shipment: data,
+      shipment: shippingData,
+      paymentId,
       orderTime: new Date(),
     };
 
@@ -36,7 +43,7 @@ const Shipment = () => {
       .then((data) => {
         if (data) {
           processOrder();
-          alert("your order placed successfully");
+          alert("Your order placed successfully");
           history.push("/home");
         }
       });
@@ -45,10 +52,10 @@ const Shipment = () => {
   console.log(watch("example")); // watch input value by passing the name of it
 
   return (
-    <div className="shipment container">
-      <div className="form-container pt-5">
-        <form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
-          <h4 className="text-center text-primary font-weight-bold text-uppercase">
+    <div className="row shipment container">
+      <div className="col-6 form-container pb-5 container">
+        <form className="ship-form container" onSubmit={handleSubmit(onSubmit)}>
+          <h4 className="ps-5 text-primary font-weight-bold text-uppercase">
             Please fill the shipment form
           </h4>
           <input
@@ -90,11 +97,25 @@ const Shipment = () => {
           <input className="btn btn-primary" type="submit" />
         </form>
       </div>
-      <div className="ship-img">
+      <div
+        className="ship-img col-4"
+        style={{ display: shippingData ? "none" : "block" }}
+      >
         <img
           src="https://cdn.pixabay.com/photo/2015/11/06/12/53/roller-1027351_960_720.jpg"
           alt=""
         />
+      </div>
+      <div
+        style={{ display: shippingData ? "block" : "none" }}
+        className="col-4 pb-5 mb-5"
+      >
+        <div className="payment-div mb-5 py-5">
+          <h5 className="text-primary text-uppercase pb-2">Please Pay: </h5>
+          <ProcessPayment
+            handlePaymentSuccess={handlePaymentSuccess}
+          ></ProcessPayment>
+        </div>
       </div>
     </div>
   );
