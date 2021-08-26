@@ -10,15 +10,15 @@ Work Done This Week(26/08/21):
 2. Bugs fixed
 3. UI improvement
 4. Related work review
+5. Customize page with server implementation
+6. Showing data in admin page
 
 Working In Progress:
-1. Customize page with server implementation
-2. Final Report writing on process
-3. Final Presentation sildes on process
+1. Final Report writing on process
+2. Final Presentation sildes on process
 
 Work To Be Done:
-1. Customized Page database connection
-2. Admin page 
+1. According to requirements nothing
 
 Done:
 1.  Home Page
@@ -38,3 +38,5 @@ Done:
 15. Payment system.
 16. UI improvement
 17. Search implementation
+18. Customize page with server implementation
+19. Admin page
