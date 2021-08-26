@@ -5,20 +5,20 @@ People willing to give surprises for their special ones can contact us and we ca
 
 # Features Working Progress
 
-Work Done This Week(19/08/21):
-1. Slide work done for presentation
-2. Loding system Done
-3. Searching system of product done
+Work Done This Week(26/08/21):
+1. Payment system integrated with order
+2. Bugs fixed
+3. UI improvement
+4. Related work review
 
 Working In Progress:
-1. Payment system
-2. Customize page with server implementation
+1. Customize page with server implementation
+2. Final Report writing on process
+3. Final Presentation sildes on process
 
 Work To Be Done:
 1. Customized Page database connection
 2. Admin page 
-3. Payment page
-4. UI improvement
 
 Done:
 1.  Home Page
@@ -33,5 +33,8 @@ Done:
 10. Login or signup with google added
 11. Review order page
 12. React routing added
-13. Heroku server deployment
-14. Intigrated with MongoDB database.
+13. Heroku server hosting done
+14. Intigrated with MongoDB database
+15. Payment system.
+16. UI improvement
+17. Search implementation
