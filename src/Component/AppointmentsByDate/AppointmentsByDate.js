@@ -7,7 +7,15 @@ const AppointmentsByDate = ({ appointments }) => {
   return (
     <div>
       <h2 className="text-brand text-center">Appointments</h2>
-      <AppointmentDataTable appointments={appointments}></AppointmentDataTable>
+      {appointments.length ? (
+        <AppointmentDataTable
+          appointments={appointments}
+        ></AppointmentDataTable>
+      ) : (
+        <div className="p-5">
+          <h4 className="lead text-center">No Appointments for this Date</h4>
+        </div>
+      )}
     </div>
   );
 };
