@@ -28,7 +28,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
     data.service = appointmentOn;
     data.date = date;
     date.created = new Date();
-    fetch("http://localhost:5000/addAppointment", {
+    fetch("https://pacific-wildwood-12473.herokuapp.com/addAppointment", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -37,7 +37,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
       .then((success) => {
         if (success) {
           closeModal();
-          alert("Appointment created successfully.");
+          alert("Booking created successfully.");
         }
       });
   };
