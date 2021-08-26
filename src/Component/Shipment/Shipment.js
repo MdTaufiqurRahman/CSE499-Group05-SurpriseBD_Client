@@ -94,7 +94,11 @@ const Shipment = () => {
             <span className="error">This field is required</span>
           )}
 
-          <input className="btn btn-primary" type="submit" />
+          <input
+            className="btn btn-primary"
+            type="submit"
+            style={{ display: shippingData ? "none" : "block" }}
+          />
         </form>
       </div>
       <div
