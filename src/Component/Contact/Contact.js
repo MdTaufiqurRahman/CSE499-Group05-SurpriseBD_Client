@@ -21,7 +21,7 @@ const Contact = () => {
                  marginTop:'10px',
                  borderRadius: '5px',
                  border: '1px solid gray',
-             }} type="text" placeholder="Your Email" required/>
+             }} type="text" placeholder="Enter Your Email" required/>
              <br/>
              <input style={{
                  padding:'10px',
