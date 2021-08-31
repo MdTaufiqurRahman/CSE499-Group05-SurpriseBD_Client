@@ -13,7 +13,7 @@ const Contact = () => {
                  marginTop:'10px',
                  borderRadius: '5px',
                  border: '1px solid gray',
-             }} type="text" placeholder="Your Name" required/>
+             }} type="text" placeholder="Enter Your Name" required/>
              <br/>
              <input style={{
                  padding:'10px',
